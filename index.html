@@ -1,0 +1,1356 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>Designing The Future | by Graham Odds @g_odds</title>
+    <meta name="description" content="This talk explores the shift in design thinking necessary to move to the increasingly device-agnostic application style that our users expect, and will show how HTML5 is an ideal technology for both this new style of thinking and its corresponding implementation." />
+    <meta name="author" content="Graham Odds" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+    <script>
+      less = { env: "development" };
+    </script>
+    <script src="js/less.js" type="text/javascript"></script>
+    -->
+</head>
+
+<body class="impress-not-supported">
+
+<div id="impress">
+
+    <div id="title" class="step title" data-x="-360" data-y="0" data-z="3000">
+        <h1><span class="temporary">Designing </span>The Future</h1>
+        <h2 class="temporary">Graham Odds</h2>
+        <h3 class="temporary">@g_odds</h3>
+    </div>
+    
+    <div id="future-is-now" class="step title" data-x="0" data-y="0" data-z="3000">
+        <h1>Is Now</h1>
+    </div>
+    
+    
+    <!-- DEVICES -->
+    
+    <div id="diversification" class="step devices" data-x="-1200" data-y="-600">
+        <p id="smartphone-label" class="label">Smartphone</p>
+        <div id="smartphone" class="device">
+            <svg width="763.2px" height="1440px">
+                <g transform="scale(12)">
+                    <path d="M58.716,0H6.086C3.056,0,0,2.545,0,5.684v108.631C0,117.455,3.056,120,6.086,120h52.63
+                        c3.03,0,4.884-2.545,4.884-5.684V5.684C63.6,2.545,61.746,0,58.716,0z M21,4.8h22.8c0.994,0,1.8,0.806,1.8,1.8
+                        c0,0.995-0.806,1.801-1.8,1.801H21c-0.995,0-1.8-0.806-1.8-1.801C19.2,5.605,20.005,4.8,21,4.8z M32.401,117.112
+                        c-3.261,0-5.906-2.735-5.906-6.112c0-3.375,2.645-6.112,5.906-6.112c3.259,0,5.904,2.737,5.904,6.112
+                        C38.305,114.377,35.66,117.112,32.401,117.112z M58.8,102H6V14.4h52.8V102z"/>
+                </g>
+            </svg>
+        </div>
+        <p id="tablet-label" class="label">Tablet</p>
+        <div id="tablet" class="device">
+            <svg width="1380.45px" height="1800px">
+                <g transform="scale(10)">
+                    <path d="M130.412,0H7.617C3.414,0,0,3.418,0,7.625v164.753C0,176.586,3.414,180,7.617,180h122.795
+                        c4.221,0,7.633-3.414,7.633-7.622V7.625C138.045,3.418,134.633,0,130.412,0z M69.019,176.56c-2.683,0-4.854-2.165-4.854-4.839
+                        c0-2.686,2.171-4.852,4.854-4.852c2.681,0,4.857,2.166,4.857,4.852C73.876,174.395,71.7,176.56,69.019,176.56z M123.937,159.796
+                        c0,1.682-1.364,3.039-3.046,3.039H17.158c-1.679,0-3.048-1.358-3.048-3.039V19.453c0-1.681,1.369-3.062,3.048-3.062h103.732
+                        c1.684,0,3.046,1.381,3.046,3.062V159.796z"/>
+                </g>
+            </svg>
+        </div>
+        <p id="laptop-label" class="label">Laptop</p>
+        <div id="laptop" class="device">
+            <svg width="1450px" height="900px">
+                <g transform="scale(5)">
+                    <path d="M168,165v2.74c0,1.784-1.861,3.26-3.645,3.26h-38.711c-1.787,0-3.645-1.476-3.645-3.26V165H0
+                        v5.967c0,0-0.161,9.033,9.515,9.033h270.967c9.676,0,9.518-9.033,9.518-9.033V165H168z"/>
+                    <path d="M32.096,154h3.226h219.354h3.227c5.342,0,9.098-3.494,9.098-8.839V12.903V9.676
+                        C267,4.335,263.244,0,257.902,0H32.096C26.749,0,23,4.335,23,9.676V12.9v132.261C23,150.506,26.749,154,32.096,154z M35,12h220v130
+                        H35V12z"/>
+                </g>
+            </svg>
+        </div>
+        <p id="desktop-label" class="label">Desktop</p>
+        <div id="desktop" class="device">
+            <svg width="1640px" height="1250.82px">
+                <g transform="scale(5)">
+                    <path d="M211.544,244.311c0,0-0.029-0.032-0.07-0.032c-0.8-0.646-7.197-5.827-10.488-11.003
+                        c0,0-1.046-0.2-1.986-8.708c-1.376-12.053-2.527-21.567-2.527-21.567h-64.894c0,0-1.18,9.515-2.525,21.567
+                        c-0.976,8.501-2.019,8.624-2.019,8.624c-3.501,5.508-10.566,11.07-10.566,11.07s-4.607,4.666,1.212,5.466
+                        c0.236,0.031,0.506,0.073,0.81,0.112c0.266,0.031,0.537,0.039,0.772,0.039c1.681,0.083,4.979,0.136,9.318,0.175
+                        c1.313,0,3.029,0.045,5.117,0.045c7.504,0.026,19.511,0.065,31.825,0.065c7.126,0,14.32,0,20.823-0.038
+                        c4.4-0.032,8.137-0.032,10.862-0.032c1.778-0.038,3.394-0.038,4.871-0.038c2.699-0.064,4.813-0.097,6.195-0.135
+                        c0.537-0.038,0.979-0.038,1.279-0.07c1.782-0.135,2.793-0.537,3.298-1.106c1.001-1.184-0.041-2.898-0.771-3.8
+                        C211.777,244.541,211.544,244.311,211.544,244.311z"/>
+                    <path d="M320.212,0H165.081h-2.152H7.787C7.787,0,0,0.511,0,6.558v184.848
+                        c0,0,0.623,7.063,7.674,7.555c6.782,0.486,146.042,0.045,156.703,0c15.701,0.052,149.289,0.474,155.923,0
+                        c7.056-0.492,7.7-7.555,7.7-7.555V6.558C328,0.511,320.212,0,320.212,0z M315,184H13V13h302.046L315,12.603V184z"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+    
+    <div id="screen-size" class="step devices" data-x="-1200" data-y="-482">
+        <svg width="1000px" height="152.793px">
+            <polygon class="size" points="62,80 92,80 152,80 167,95 152,110 92,110 62,110"/>
+            <polygon class="size" points="335,110 269,110 200,110 185,95 200,80 269,80 335,80 350,95"/>
+            <polygon class="size" points="578,110 452,110 383,110 368,95 383,80 452,80 578,80 593,95"/>
+            <polygon class="size" points="1000,80 686,80 617,80 602,95 617,110 686,110 1000,110"/>
+            <line stroke-width="4" x1="25" y1="80" x2="25" y2="110"/>
+            <line stroke-width="4" x1="63" y1="50" x2="63" y2="110"/>
+            <line stroke-width="4" x1="101" y1="80" x2="101" y2="110"/>
+            <line stroke-width="4" x1="139" y1="80" x2="139" y2="110"/>
+            <line stroke-width="4" x1="177" y1="80" x2="177" y2="110"/>
+            <line stroke-width="4" x1="215" y1="80" x2="215" y2="110"/>
+            <line stroke-width="4" x1="253" y1="80" x2="253" y2="110"/>
+            <line stroke-width="4" x1="291" y1="50" x2="291" y2="110"/>
+            <line stroke-width="4" x1="329" y1="80" x2="329" y2="110"/>
+            <line stroke-width="4" x1="367" y1="80" x2="367" y2="110"/>
+            <line stroke-width="4" x1="405" y1="80" x2="405" y2="110"/>
+            <line stroke-width="4" x1="443" y1="50" x2="443" y2="110"/>
+            <line stroke-width="4" x1="481" y1="80" x2="481" y2="110"/>
+            <line stroke-width="4" x1="519" y1="80" x2="519" y2="110"/>
+            <line stroke-width="4" x1="557" y1="80" x2="557" y2="110"/>
+            <line stroke-width="4" x1="595" y1="80" x2="595" y2="110"/>
+            <line stroke-width="4" x1="633" y1="80" x2="633" y2="110"/>
+            <line stroke-width="4" x1="671" y1="0" x2="671" y2="110"/>
+            <line stroke-width="4" x1="709" y1="80" x2="709" y2="110"/>
+            <line stroke-width="4" x1="747" y1="80" x2="747" y2="110"/>
+            <line stroke-width="4" x1="785" y1="80" x2="785" y2="110"/>
+            <line stroke-width="4" x1="823" y1="80" x2="823" y2="110"/>
+            <line stroke-width="4" x1="861" y1="80" x2="861" y2="110"/>
+            <line stroke-width="4" x1="899" y1="80" x2="899" y2="110"/>
+            <line stroke-width="4" x1="937" y1="80" x2="937" y2="110"/>
+            <line stroke-width="4" x1="975" y1="80" x2="975" y2="110"/>
+            <line stroke-width="10" x1="0" y1="115" x2="1000" y2="115"/>
+            <text transform="matrix(1 0 0 1 51.3301 145)">3"</text>
+            <text transform="matrix(1 0 0 1 127.3301 145)">5"</text>
+            <text transform="matrix(1 0 0 1 203.3301 145)">7"</text>
+            <text transform="matrix(1 0 0 1 279.3301 145)">9"</text>
+            <text transform="matrix(1 0 0 1 349.5469 145)">11"</text>
+            <text transform="matrix(1 0 0 1 424.6563 145)">13"</text>
+            <text transform="matrix(1 0 0 1 500.6563 145)">15"</text>
+            <text transform="matrix(1 0 0 1 576.6563 145)">17"</text>
+            <text transform="matrix(1 0 0 1 652.6563 145)">19"</text>
+            <text transform="matrix(1 0 0 1 728.6563 145)">21"</text>
+            <text transform="matrix(1 0 0 1 804.6563 145)">23"</text>
+            <text transform="matrix(1 0 0 1 880.6563 145)">25"</text>
+            <text transform="matrix(1 0 0 1 956.6563 145)">27"</text>
+        </svg>
+    </div>
+    
+    <div id="input-mechanisms" class="step devices" data-x="-1200" data-y="-482">
+        <div id="touch" class="input">Touch / Gestures</div>
+        <div id="keyboard" class="input">Cursor / Keyboard</div>
+    </div>
+    
+    <div id="input-mechanisms-2" class="step devices" data-x="-1200" data-y="-482">
+    </div>
+
+    <div id="computer-usage" class="step usage devices" data-x="-1190" data-y="-612" data-z="-760">
+        <h1>Computers keep us productive and informed</h1>
+        <!--http://readitlaterlist.com/blog/2011/01/is-mobile-affecting-when-we-read/-->
+        <svg width="550px" height="300px">
+          <line stroke-miterlimit="10" x1="4" y1="271.5" x2="541" y2="271.5"/>
+          <line stroke-miterlimit="10" x1="518.5" y1="271" x2="518.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="494.5" y1="271" x2="494.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="471.5" y1="271" x2="471.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="448.5" y1="271" x2="448.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="424.5" y1="271" x2="424.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="401.5" y1="271" x2="401.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="378.5" y1="271" x2="378.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="354.5" y1="271" x2="354.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="331.5" y1="271" x2="331.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="308.5" y1="271" x2="308.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="284.5" y1="271" x2="284.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="261.5" y1="271" x2="261.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="237.5" y1="271" x2="237.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="214.5" y1="271" x2="214.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="191.5" y1="271" x2="191.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="167.5" y1="271" x2="167.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="144.5" y1="271" x2="144.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="121.5" y1="271" x2="121.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="97.5" y1="271" x2="97.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="74.5" y1="271" x2="74.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="51.5" y1="271" x2="51.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="27.5" y1="271" x2="27.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="4.5" y1="271" x2="4.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="541.5" y1="271" x2="541.5" y2="276"/>
+          <text transform="matrix(1 0 0 1 16.5264 290)">2am</text>
+          <text transform="matrix(1 0 0 1 63.5264 290)">4am</text>
+          <text transform="matrix(1 0 0 1 110.5264 290)">6am</text>
+          <text transform="matrix(1 0 0 1 156.5259 290)">8am</text>
+          <text transform="matrix(1 0 0 1 200.4482 290)">10am</text>
+          <text transform="matrix(1 0 0 1 246.9263 290)">12pm</text>
+          <text transform="matrix(1 0 0 1 297.0039 290)">2pm</text>
+          <text transform="matrix(1 0 0 1 343.0039 290)">4pm</text>
+          <text transform="matrix(1 0 0 1 390.0039 290)">6pm</text>
+          <text transform="matrix(1 0 0 1 437.0039 290)">8pm</text>
+          <text transform="matrix(1 0 0 1 479.9268 290)">10pm</text>
+          <text transform="matrix(1 0 0 1 527.4482 290)">12am</text>
+          <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="272.5005" y1="270.75" x2="272.5005" y2="61.2505">
+            <stop  offset="0" style="stop-color:#3584A0;stop-opacity:0"/>
+            <stop  offset="1" style="stop-color:#3584A0"/>
+          </linearGradient>
+          <polygon fill="url(#SVGID_1_)" points="4,216.5 26.5,239.75 50.625,237.5 72.563,242.125 96.781,232.813 119.516,217.531
+      142.758,191.516 166.754,137.258 190.002,122.504 213.251,92.252 237,99.75 260.5,80.5 284,94.75 307,85.25 354,136.25 377,134
+      400.75,84.5 423.75,99 448.5,71.25 470.25,61.25 495.5,101.25 518.375,151.625 541,188 541,270.25 4,270.75 	"/>
+          <polyline fill="none" stroke="#3584A0" stroke-miterlimit="10" points="3.813,216 26.406,239.5 50.578,237.375 72.539,242.063
+      96.77,232.781 119.51,217.516 142.755,191.508 166.752,137.254 190.001,122.502 213.25,92.251 237,99.75 260.5,80.5 284,94.75
+      307,85.25 354,136.25 377,134 400.75,84.5 423.75,99 448.5,71.25 470.25,61.25 495.5,101.25 518.375,151.625 541.5,188 	"/>
+          <text transform="matrix(1 0 0 1 300 51)" class="title">Articles read by Read It Later users</text>
+        </svg>
+
+        <!-- http://services.google.com/fh/files/misc/multiscreenworld_final.pdf -->
+        <ul>
+            <li>Office or home use</li>
+            <li>Productive, task-oriented</li>
+            <li>Requires lots of time and focus</li>
+            <li>Serious, research intensive attitude</li>
+        </ul>
+    </div>
+    
+    <div id="smartphone-usage" class="step usage devices" data-x="-1630" data-y="-575" data-z="-900" data-rotate="90">
+        <h1>Smartphones keep us connected</h1>
+        <!--http://readitlaterlist.com/blog/2011/01/is-mobile-affecting-when-we-read/-->
+        <svg width="550px" height="300px">
+          <line stroke-miterlimit="10" x1="4" y1="271.5" x2="541" y2="271.5"/>
+          <line stroke-miterlimit="10" x1="518.5" y1="271" x2="518.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="494.5" y1="271" x2="494.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="471.5" y1="271" x2="471.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="448.5" y1="271" x2="448.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="424.5" y1="271" x2="424.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="401.5" y1="271" x2="401.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="378.5" y1="271" x2="378.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="354.5" y1="271" x2="354.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="331.5" y1="271" x2="331.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="308.5" y1="271" x2="308.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="284.5" y1="271" x2="284.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="261.5" y1="271" x2="261.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="237.5" y1="271" x2="237.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="214.5" y1="271" x2="214.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="191.5" y1="271" x2="191.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="167.5" y1="271" x2="167.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="144.5" y1="271" x2="144.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="121.5" y1="271" x2="121.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="97.5" y1="271" x2="97.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="74.5" y1="271" x2="74.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="51.5" y1="271" x2="51.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="27.5" y1="271" x2="27.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="4.5" y1="271" x2="4.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="541.5" y1="271" x2="541.5" y2="276"/>
+          <text transform="matrix(1 0 0 1 16.5264 290)">2am</text>
+          <text transform="matrix(1 0 0 1 63.5264 290)">4am</text>
+          <text transform="matrix(1 0 0 1 110.5264 290)">6am</text>
+          <text transform="matrix(1 0 0 1 156.5259 290)">8am</text>
+          <text transform="matrix(1 0 0 1 200.4482 290)">10am</text>
+          <text transform="matrix(1 0 0 1 246.9263 290)">12pm</text>
+          <text transform="matrix(1 0 0 1 297.0039 290)">2pm</text>
+          <text transform="matrix(1 0 0 1 343.0039 290)">4pm</text>
+          <text transform="matrix(1 0 0 1 390.0039 290)">6pm</text>
+          <text transform="matrix(1 0 0 1 437.0039 290)">8pm</text>
+          <text transform="matrix(1 0 0 1 479.9268 290)">10pm</text>
+          <text transform="matrix(1 0 0 1 527.4482 290)">12am</text>
+          <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="271.9692" y1="273" x2="271.9692" y2="41.501">
+            <stop  offset="0" style="stop-color:#3584A0;stop-opacity:0"/>
+            <stop  offset="1" style="stop-color:#3584A0"/>
+          </linearGradient>
+          <polygon fill="url(#SVGID_1_)" points="3.938,196 26.469,237.125 49.734,216.188 73.242,241.844 96.496,227.297 120.248,108.523
+      143.499,172.762 167,163.756 190.5,103.753 237,176 261,176 283,172.875 307.5,162.375 331,179.063 354.5,151.531 377.75,43.266
+      401.25,57.508 424.75,119.504 448.25,55.502 471,94.751 494.75,41.5 517.75,130.25 540,174.25 540,273 4,273 	"/>
+          <polyline fill="none" stroke="#3584A0" stroke-miterlimit="10" points="3.938,196 26.469,237.125 49.734,216.188 73.242,241.844
+      96.496,227.297 120.248,108.523 143.499,172.762 167,163.756 190.5,103.503 237,175.5 261,175.5 283,172.625 307.5,162.25 331,179
+      354.5,151.5 377.75,43.25 401.25,57.5 424.75,119.5 448.25,55.5 471,94.75 494.75,41.5 518,130.25 540.5,174.25 	"/>
+          <text transform="matrix(1 0 0 1 300 27)" class="title">Articles read by Read It Later users</text>
+        </svg>
+
+
+        <!-- http://services.google.com/fh/files/misc/multiscreenworld_final.pdf -->
+        <ul>
+            <li>On-the-go as well as at home</li>
+            <li>Communicate and connect</li>
+            <li>Short burst of time</li>
+            <li>Need info quickly and immediately</li>
+        </ul>
+    </div>
+
+    <div id="tablet-usage" class="step usage devices" data-x="-1420" data-y="-605" data-z="-840" data-rotate="90">
+        <h1>Tablets keep us entertained</h1>
+        <!--http://readitlaterlist.com/blog/2011/01/is-mobile-affecting-when-we-read/-->
+        <svg width="550px" height="300px">
+          <line stroke-miterlimit="10" x1="4" y1="271.5" x2="541" y2="271.5"/>
+          <line stroke-miterlimit="10" x1="518.5" y1="271" x2="518.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="494.5" y1="271" x2="494.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="471.5" y1="271" x2="471.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="448.5" y1="271" x2="448.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="424.5" y1="271" x2="424.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="401.5" y1="271" x2="401.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="378.5" y1="271" x2="378.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="354.5" y1="271" x2="354.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="331.5" y1="271" x2="331.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="308.5" y1="271" x2="308.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="284.5" y1="271" x2="284.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="261.5" y1="271" x2="261.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="237.5" y1="271" x2="237.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="214.5" y1="271" x2="214.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="191.5" y1="271" x2="191.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="167.5" y1="271" x2="167.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="144.5" y1="271" x2="144.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="121.5" y1="271" x2="121.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="97.5" y1="271" x2="97.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="74.5" y1="271" x2="74.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="51.5" y1="271" x2="51.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="27.5" y1="271" x2="27.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="4.5" y1="271" x2="4.5" y2="276"/>
+          <line stroke-miterlimit="10" x1="541.5" y1="271" x2="541.5" y2="276"/>
+          <text transform="matrix(1 0 0 1 16.5264 290)">2am</text>
+          <text transform="matrix(1 0 0 1 63.5264 290)">4am</text>
+          <text transform="matrix(1 0 0 1 110.5264 290)">6am</text>
+          <text transform="matrix(1 0 0 1 156.5259 290)">8am</text>
+          <text transform="matrix(1 0 0 1 200.4482 290)">10am</text>
+          <text transform="matrix(1 0 0 1 246.9263 290)">12pm</text>
+          <text transform="matrix(1 0 0 1 297.0039 290)">2pm</text>
+          <text transform="matrix(1 0 0 1 343.0039 290)">4pm</text>
+          <text transform="matrix(1 0 0 1 390.0039 290)">6pm</text>
+          <text transform="matrix(1 0 0 1 437.0039 290)">8pm</text>
+          <text transform="matrix(1 0 0 1 479.9268 290)">10pm</text>
+          <text transform="matrix(1 0 0 1 527.4482 290)">12am</text>
+          <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="271.5005" y1="271" x2="271.5005" y2="41.7505">
+            <stop  offset="0" style="stop-color:#3584A0;stop-opacity:0"/>
+            <stop  offset="1" style="stop-color:#3584A0"/>
+          </linearGradient>
+          <polygon fill="url(#SVGID_1_)" points="3,238.75 26.75,257 49.625,255.625 97.313,240.063 120.156,176.781 144.453,243.516
+      167.477,229.508 190.238,223.004 214.494,243.752 237.497,243.5 260.249,231.75 283.25,216.75 306.5,233.5 330.25,236.5
+      353.25,231.5 377,171.75 401.5,177.5 424.5,191.75 446.75,41.75 470.5,86.5 493.75,62.5 516.75,223.25 540,219.25 540,271 3,271
+      "/>
+          <polyline fill="none" stroke="#3584A0" stroke-miterlimit="10" points="3.5,239 27,257.125 49.75,255.688 97.375,240.094
+      120.188,176.797 144.469,243.523 167.484,229.512 190.242,223.006 214.496,243.753 237.498,243.5 260.25,231.75 283.25,216.75
+      306.5,233.5 330.25,236.5 353.25,231.5 377,171.75 401.5,177.5 424.5,191.75 446.75,41.75 470.5,86.5 493.75,62.5 517,223.25
+      540.5,219.25 	"/>
+          <text transform="matrix(1 0 0 1 300 29)" class="title">Articles read by Read It Later users</text>
+        </svg>
+
+        <!-- http://services.google.com/fh/files/misc/multiscreenworld_final.pdf -->
+        <ul>
+            <li>Primarily used at home/office</li>
+            <li>Entertainment and browsing</li>
+            <li>Unbounded sense of time</li>
+            <li>Relaxed and leasurely approach</li>
+        </ul>
+    </div>
+    
+    <div id="multiple-devices" class="step devices" data-x="-1200" data-y="200">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1060px" height="679px">
+        <g id="Simultaneous_devices_1_">
+            <ellipse fill="none" stroke="#3584A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="6" cx="851.841" cy="520.604" rx="206.505" ry="87.955"/>
+            <rect x="725.346" y="360" fill="#333333" width="234" height="134"/>
+            <rect x="933.346" y="564" fill="#333333" width="87" height="67"/>
+            <rect x="708.346" y="568" fill="#333333" width="32" height="51"/>
+            <path id="Smartphone_1_" fill="#FFFFFF" d="M739.786,560.779h-29.815c-1.717,0-3.448,1.442-3.448,3.22v61.544
+            c0,1.779,1.731,3.221,3.448,3.221h29.815c1.718,0,2.768-1.441,2.768-3.22v-61.545C742.554,562.222,741.504,560.779,739.786,560.779
+            z M718.42,563.499h12.915c0.565,0,1.021,0.456,1.021,1.019c0,0.565-0.455,1.021-1.021,1.021H718.42
+            c-0.564,0-1.021-0.456-1.021-1.021C717.399,563.955,717.855,563.499,718.42,563.499z M724.878,627.128
+            c-1.847,0-3.345-1.55-3.345-3.463c0-1.912,1.498-3.464,3.345-3.464s3.345,1.552,3.345,3.464
+            C728.223,625.578,726.725,627.128,724.878,627.128z M739.835,618.566h-29.913v-49.628h29.913V618.566z"/>
+            <path id="Tablet_1_" fill="#FFFFFF" d="M926.521,562.602v69.568c0,2.381,1.936,4.314,4.318,4.314h93.339
+            c2.385,0,4.318-1.934,4.318-4.314v-69.568c0-2.391-1.934-4.324-4.318-4.324H930.84
+            C928.457,558.277,926.521,560.211,926.521,562.602z M1026.548,597.383c0,1.521-1.226,2.749-2.742,2.749
+            c-1.521,0-2.747-1.229-2.747-2.749c0-1.519,1.227-2.752,2.747-2.752C1025.322,594.631,1026.548,595.864,1026.548,597.383z
+             M1017.051,566.271c0.954,0,1.722,0.773,1.722,1.725v58.769c0,0.951-0.769,1.727-1.722,1.727h-79.508
+            c-0.953,0-1.735-0.775-1.735-1.727v-58.769c0-0.953,0.782-1.725,1.735-1.725H1017.051z"/>
+            <g id="Desktop_1_">
+              <path id="Stand_1_" fill="#FFFFFF" d="M878.636,537.976c0,0-0.023-0.024-0.055-0.024c-0.606-0.489-5.456-4.418-7.95-8.342
+              c0,0-0.792-0.481-1.506-6.931c-1.044-9.136-1.917-16.679-1.917-16.679h-49.195c0,0-0.894,7.543-1.914,16.679
+              c-0.739,6.444-1.53,6.701-1.53,6.701c-2.653,4.178-8.009,8.476-8.009,8.476s-3.495,3.579,0.917,4.186
+              c0.18,0.023,0.383,0.077,0.614,0.106c0.201,0.023,0.406,0.039,0.585,0.039c1.273,0.063,3.774,0.106,7.064,0.137
+              c0.997,0,2.297,0.037,3.879,0.037c5.688,0.02,14.791,0.052,24.128,0.052c5.401,0,10.855,0.001,15.785-0.028
+              c3.336-0.023,6.167-0.023,8.235-0.023c1.347-0.029,2.572-0.029,3.691-0.029c2.047-0.05,3.649-0.073,4.697-0.103
+              c0.407-0.028,0.742-0.028,0.971-0.053c1.351-0.104,2.116-0.408,2.499-0.839c0.76-0.897-0.031-2.197-0.584-2.881
+              C878.812,538.15,878.636,537.976,878.636,537.976z"/>
+            <path id="Screen_2_" fill="#FFFFFF" d="M961.016,353H843.411h-1.632H724.168c0,0-5.822,0.152-5.822,4.736v140.133
+              c0,0,0.432,5.354,5.777,5.727c5.141,0.37,110.692,0.034,118.773,0c11.904,0.04,113.382,0.359,118.409,0
+              c5.35-0.373,6.04-5.727,6.04-5.727V357.736C967.346,353.152,961.016,353,961.016,353z M957.346,492h-229V363H957.1l0.246-0.682
+              V492z"/>
+          </g>
+          <text transform="matrix(1 0 0 1 715.5732 670)" fill="#FFFFFF" font-size="36">simultaneous use</text>
+        </g>
+        <g id="Complementary_devices">
+          <path id="Smartphone" fill="#FFFFFF" d="M41.023,548.779H11.207c-1.717,0-3.448,1.442-3.448,3.22v61.544
+            c0,1.779,1.731,3.221,3.448,3.221h29.816c1.717,0,2.767-1.441,2.767-3.22v-61.545C43.79,550.222,42.74,548.779,41.023,548.779z
+             M19.656,551.499h12.917c0.564,0,1.021,0.456,1.021,1.019c0,0.565-0.457,1.021-1.021,1.021H19.656c-0.563,0-1.02-0.456-1.02-1.021
+            C18.636,551.955,19.092,551.499,19.656,551.499z M26.115,615.128c-1.848,0-3.346-1.55-3.346-3.463c0-1.912,1.499-3.464,3.346-3.464
+            c1.846,0,3.345,1.552,3.345,3.464C29.459,613.578,27.961,615.128,26.115,615.128z M41.07,606.566H11.158v-49.628H41.07V606.566z"/>
+          <path id="Tablet" fill="#FFFFFF" d="M223.932,550.602v69.568c0,2.381,1.937,4.314,4.319,4.314h93.339
+            c2.384,0,4.319-1.934,4.319-4.314v-69.568c0-2.391-1.935-4.324-4.319-4.324h-93.339
+            C225.869,546.277,223.932,548.211,223.932,550.602z M323.959,585.383c0,1.521-1.227,2.749-2.742,2.749
+            c-1.521,0-2.748-1.229-2.748-2.749c0-1.519,1.227-2.752,2.748-2.752C322.733,582.631,323.959,583.864,323.959,585.383z
+             M314.462,554.271c0.954,0,1.723,0.773,1.723,1.725v58.769c0,0.951-0.77,1.727-1.723,1.727h-79.508
+            c-0.954,0-1.735-0.775-1.735-1.727v-58.769c0-0.953,0.781-1.725,1.735-1.725H314.462z"/>
+          <g id="Desktop">
+            <path id="Stand" fill="#FFFFFF" d="M180.027,525.976c0,0-0.023-0.024-0.054-0.024c-0.607-0.489-5.456-4.418-7.951-8.342
+              c0,0-0.792-0.481-1.506-6.931C169.473,501.543,168.6,494,168.6,494h-49.195c0,0-0.894,7.543-1.915,16.679
+              c-0.739,6.444-1.529,6.701-1.529,6.701c-2.655,4.178-8.011,8.476-8.011,8.476s-3.493,3.579,0.918,4.186
+              c0.179,0.023,0.384,0.077,0.614,0.106c0.202,0.023,0.408,0.039,0.585,0.039c1.274,0.063,3.774,0.106,7.064,0.137
+              c0.997,0,2.297,0.037,3.88,0.037c5.689,0.02,14.791,0.052,24.126,0.052c5.402,0,10.856,0.001,15.787-0.028
+              c3.335-0.023,6.167-0.023,8.234-0.023c1.348-0.029,2.573-0.029,3.692-0.029c2.046-0.05,3.649-0.073,4.697-0.103
+              c0.407-0.028,0.742-0.028,0.97-0.053c1.351-0.104,2.117-0.408,2.5-0.839c0.759-0.897-0.032-2.197-0.584-2.881
+              C180.204,526.15,180.027,525.976,180.027,525.976z"/>
+            <path id="Screen_1_" fill="#FFFFFF" d="M262.407,341H144.803h-1.631H25.559c0,0-5.213,0.152-5.213,4.736v140.133
+              c0,0,0.127,5.354,5.473,5.727c5.141,0.37,110.541,0.034,118.623,0c11.903,0.04,113.107,0.359,118.135,0
+              c5.35-0.373,5.77-5.727,5.77-5.727V345.736C268.346,341.152,262.407,341,262.407,341z M258.346,480h-228V351h228.146l-0.146-0.682
+              V480z"/>
+          </g>
+          <g>
+            <g>
+                <line fill="none" stroke="#3584A0" stroke-width="2" stroke-miterlimit="10" x1="237.753" y1="532.517" x2="235.631" y2="530.396"/>
+                <line fill="none" stroke="#3584A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="5.5976,5.5976" x1="231.673" y1="526.438" x2="217.82" y2="512.584"/>
+                <line fill="none" stroke="#3584A0" stroke-width="2" stroke-miterlimit="10" x1="215.841" y1="510.605" x2="213.719" y2="508.484"/>
+              <g>
+                <polygon fill="#3584A0" points="241.245,526.137 244.857,539.621 231.372,536.009"/>
+              </g>
+              <g>
+                <polygon fill="#3584A0" points="220.1,504.992 206.615,501.38 210.228,514.864"/>
+              </g>
+            </g>
+          </g>
+          <g>
+            <g>
+                <line fill="none" stroke="#3584A0" stroke-width="2" stroke-miterlimit="10" x1="53.104" y1="532.517" x2="55.226" y2="530.396"/>
+                <line fill="none" stroke="#3584A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="5.5976,5.5976" x1="59.184" y1="526.438" x2="73.037" y2="512.584"/>
+                <line fill="none" stroke="#3584A0" stroke-width="2" stroke-miterlimit="10" x1="75.016" y1="510.605" x2="77.138" y2="508.484"/>
+              <g>
+                <polygon fill="#3584A0" points="59.485,536.009 46,539.621 49.612,526.137"/>
+              </g>
+              <g>
+                <polygon fill="#3584A0" points="80.629,514.864 84.242,501.38 70.757,504.992"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 0 669)" fill="#FFFFFF" font-size="36">complementary use</text>
+        </g>
+        <g id="Device_shifting">
+          <path id="Smartphone_2_" fill="#FFFFFF" d="M311.876,134.232h-29.816c-1.717,0-3.448,1.441-3.448,3.22v61.543
+            c0,1.779,1.731,3.221,3.448,3.221h29.816c1.718,0,2.768-1.441,2.768-3.22v-61.544C314.644,135.674,313.594,134.232,311.876,134.232
+            z M290.51,136.952h12.916c0.565,0,1.021,0.456,1.021,1.019c0,0.564-0.456,1.021-1.021,1.021H290.51
+            c-0.564,0-1.021-0.457-1.021-1.021C289.489,137.408,289.946,136.952,290.51,136.952z M296.968,200.58
+            c-1.848,0-3.345-1.549-3.345-3.462s1.498-3.463,3.345-3.463c1.846,0,3.344,1.551,3.344,3.463S298.814,200.58,296.968,200.58z
+             M311.924,192.019h-29.913v-49.628h29.913V192.019z"/>
+          <path id="Tablet_2_" fill="#FFFFFF" d="M444.965,175.898h-69.568c-2.38,0-4.314,1.937-4.314,4.32v93.338
+            c0,2.384,1.934,4.319,4.314,4.319h69.568c2.391,0,4.325-1.935,4.325-4.319v-93.338C449.29,177.835,447.356,175.898,444.965,175.898
+            z M410.185,275.925c-1.521,0-2.749-1.227-2.749-2.742c0-1.521,1.229-2.748,2.749-2.748c1.519,0,2.752,1.227,2.752,2.748
+            C412.937,274.699,411.703,275.925,410.185,275.925z M441.297,266.428c0,0.954-0.773,1.722-1.726,1.722h-58.768
+            c-0.951,0-1.727-0.77-1.727-1.722V186.92c0-0.954,0.776-1.736,1.727-1.736h58.768c0.954,0,1.726,0.782,1.726,1.736V266.428z"/>
+          <g id="Desktop_2_">
+            <path id="Stand_2_" fill="#FFFFFF" d="M670.657,323.13c0,0-0.023-0.024-0.054-0.024c-0.607-0.49-5.456-4.418-7.951-8.341
+              c0,0-0.792-0.059-1.506-6.508C660.104,299.12,659.23,292,659.23,292h-49.195c0,0-0.895,7.12-1.915,16.256
+              c-0.739,6.444-1.529,6.491-1.529,6.491c-2.654,4.176-8.011,8.369-8.011,8.369s-3.493,3.526,0.919,4.133
+              c0.179,0.022,0.383,0.049,0.613,0.078c0.201,0.024,0.407,0.027,0.585,0.027c1.274,0.063,3.774,0.101,7.064,0.131
+              c0.996,0,2.296,0.033,3.88,0.033c5.688,0.02,14.79,0.049,24.126,0.049c5.402,0,10.856,0,15.787-0.029
+              c3.336-0.024,6.167-0.024,8.234-0.024c1.348-0.029,2.572-0.029,3.691-0.029c2.047-0.049,3.65-0.073,4.698-0.103
+              c0.405-0.028,0.741-0.028,0.97-0.053c1.35-0.103,2.117-0.407,2.5-0.839c0.759-0.897-0.032-2.196-0.585-2.88
+              C670.834,323.305,670.657,323.13,670.657,323.13z"/>
+            <path id="Screen_3_" fill="#FFFFFF" d="M753.037,138H635.434h-1.633H516.188c0,0-5.843,0.307-5.843,4.891v140.133
+              c0,0,0.442,5.354,5.788,5.727c5.141,0.369,110.698,0.034,118.781,0c11.902,0.039,113.37,0.359,118.397,0
+              c5.35-0.373,6.033-5.727,6.033-5.727V142.891C759.346,138.307,753.037,138,753.037,138z M749.346,277h-229V148h228.775
+              l0.225-0.527V277z"/>
+          </g>
+          <g id="Laptop">
+            <path id="Keyboard" fill="#FFFFFF" d="M482.346,105v1.44c0,1.137-1.726,1.56-2.862,1.56h-24.673c-1.139,0-2.465-0.423-2.465-1.56
+              V105h-78v3.496c0,0,0.281,5.504,6.448,5.504h172.704c6.168,0,4.848-5.504,4.848-5.504V105H482.346z"/>
+            <path id="Screen" fill="#FFFFFF" d="M395.187,99h2.056H537.05h2.056c3.406,0,5.24-3.545,5.24-6.951V7.753V5.696
+              c0-3.405-1.834-5.696-5.24-5.696H395.187c-3.408,0-6.841,2.292-6.841,5.696V7.75v84.299C388.346,95.455,391.778,99,395.187,99z
+               M397.346,7h140v83h-140V7z"/>
+          </g>
+          <g>
+            <g>
+              <path fill="none" stroke="#3584A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="6,6" d="M296.628,130.295
+                c0,0,6.736-25.219,29.232-49.436c24.884-26.787,64.478-35.051,82.867-37.516"/>
+              <g>
+                <polygon fill="#3584A0" points="407.458,50.591 418.72,42.341 405.945,36.711"/>
+              </g>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path fill="none" stroke="#3584A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="6,6" d="M622.379,158.283
+                c2.021-18.166,3.482-57.188-16.383-82.629c-18.007-23.062-55.109-26.621-55.109-26.621"/>
+              <g>
+                <polygon fill="#3584A0" points="629.485,157.185 620.94,168.225 615.65,155.306"/>
+              </g>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path fill="none" stroke="#3584A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="6,6" d="M408.691,194.152
+                c-0.966-10.24-1.099-27.441,4.891-47.044c5.137-16.813,10.741-25.374,10.741-25.374"/>
+              <g>
+                <polygon fill="#3584A0" points="415.442,191.152 410.187,204.085 401.612,193.068"/>
+              </g>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path fill="none" stroke="#3584A0" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="6,6" d="M428.994,283.946
+                c0,0,20.296,32.691,65.851,25.78c21.906-3.324,42.966-28.767,52.721-42.232"/>
+              <g>
+                <polygon fill="#3584A0" points="552.066,273.106 553.223,259.194 540.596,265.147"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 378.6738 363)" fill="#FFFFFF" font-size="36">device shifting</text>
+        </g>
+        </svg>
+    </div>
+    
+    <div id="diversification-overview" class="step" data-x="-1200" data-y="-482">
+    </div>
+    
+    
+    <!-- DESIGN -->
+    
+    <div id="how-to-design" class="step design" data-x="1100" data-y="-750" data-scale="0.8">
+       <!-- José Hernandez, from The Noun Project (http://thenounproject.com/noun/ruler/#icon-No9403 -->
+       <!-- Okan Benn, from The Noun Project (http://thenounproject.com/noun/paint-palette/#icon-No1435) -->
+       <!-- Shreya Chakravarty, from The Noun Project (http://thenounproject.com/noun/stress/#icon-No1760) -->
+       <!-- Monika Ciapala, from The Noun Project (http://thenounproject.com/noun/pencil/#icon-No9038) -->
+       <svg width="688.084px" height="737.368px">
+            <g>
+                <path fill="#FFFFFF" d="M269.268,308.684c29.443,0,53.322,23.875,53.322,53.322c0,29.448-23.878,53.319-53.322,53.319
+                    c-29.449,0-53.322-23.871-53.322-53.319C215.946,332.559,239.819,308.684,269.268,308.684z"/>
+                <path fill="#FFFFFF" d="M200.354,364.427c18.976,15.562,19.399,46.451,0.917,68.986L82.335,578.575
+                    c-18.473,22.555-48.833,28.225-67.828,12.664l0,0c-18.978-15.563-19.391-46.434-0.919-68.996L132.53,377.095
+                    C151.006,354.545,181.357,348.885,200.354,364.427L200.354,364.427z"/>
+                <path fill="#FFFFFF" d="M243.025,478.69c7.297,8.66,3.76,23.646-7.889,33.453l0,0c-11.663,9.785-27.032,10.738-34.317,2.078
+                    l-80.191-95.244c-7.281-8.65-3.746-23.637,7.906-33.452l0,0c11.652-9.812,27.015-10.743,34.302-2.091L243.025,478.69z"/>
+                <path fill="#FFFFFF" d="M238.925,513.77c-5.237,8.453-17.181,10.547-26.628,4.652l0,0c-9.459-5.873-12.854-17.506-7.599-25.939
+                    l59.609-95.898c5.254-8.43,17.175-10.514,26.634-4.639l0,0c9.447,5.854,12.853,17.494,7.591,25.936L238.925,513.77z"/>
+                <path fill="#FFFFFF" d="M260.504,567.594c0,18.018-12.183,32.627-27.241,32.627H44.503c-15.051,0-27.243-14.609-27.243-32.627l0,0
+                    c0-18.02,12.202-32.631,27.243-32.631h188.76C248.322,534.963,260.504,549.575,260.504,567.594L260.504,567.594z"/>
+                <path fill="#FFFFFF" d="M279.149,691.954c3.393,22.926-5.042,43.205-18.864,45.244l0,0c-13.813,2.063-27.791-14.902-31.193-37.84
+                    L211.54,580.86c-3.416-22.959,5.032-43.229,18.836-45.262l0,0c13.82-2.061,27.806,14.887,31.192,37.844L279.149,691.954z"/>
+            </g>
+            <g>
+                <path fill="#FFFFFF" d="M387.336,243.741c-8.17,0-14.795,6.623-14.795,14.794c0,8.17,6.625,14.794,14.795,14.794
+                    c8.179,0,14.803-6.625,14.803-14.794C402.139,250.364,395.515,243.741,387.336,243.741z"/>
+                <path fill="#FFFFFF" d="M358.776,278.094c-5.814,0-10.515,4.707-10.515,10.521c0,5.804,4.699,10.521,10.515,10.521
+                    c5.813,0,10.521-4.717,10.521-10.521C369.296,282.801,364.589,278.094,358.776,278.094z"/>
+                <path fill="#FFFFFF" d="M334.252,305.933c-4.171,0-7.564,3.383-7.564,7.555c0,4.178,3.394,7.565,7.564,7.565
+                    c4.18,0,7.564-3.387,7.564-7.565C341.816,309.316,338.432,305.933,334.252,305.933z"/>
+                <g>
+                    <path fill="#FFFFFF" d="M592.584,140.497c-0.305,0-0.5,0.248-0.5,0.553V144h1v-2.95
+                        C593.084,140.745,592.891,140.497,592.584,140.497z"/>
+                    <path fill="#FFFFFF" d="M567.584,142.253c-0.205,0-0.5,0.165-0.5,0.369V144h1v-1.377
+                        C568.084,142.418,567.79,142.253,567.584,142.253z"/>
+                    <path fill="#FFFFFF" d="M562.084,140.497c-0.305,0-1,0.248-1,0.553V144h2v-2.95C563.084,140.745,562.391,140.497,562.084,140.497z
+                        "/>
+                    <path fill="#FFFFFF" d="M587.584,142.253c-0.204,0-0.5,0.165-0.5,0.369V144h1v-1.377
+                        C588.084,142.418,587.789,142.253,587.584,142.253z"/>
+                    <path fill="#FFFFFF" d="M577.584,142.253c-0.203,0-0.5,0.165-0.5,0.369V144h1v-1.377
+                        C578.084,142.418,577.79,142.253,577.584,142.253z"/>
+                    <path fill="#FFFFFF" d="M556.584,142.253c-0.204,0-0.5,0.165-0.5,0.369V144h1v-1.377
+                        C557.084,142.418,556.789,142.253,556.584,142.253z"/>
+                    <path fill="#FFFFFF" d="M582.584,140.497c-0.307,0-0.5,0.248-0.5,0.553V144h1v-2.95
+                        C583.084,140.745,582.889,140.497,582.584,140.497z"/>
+                    <path fill="#FFFFFF" d="M572.584,140.497c-0.307,0-0.5,0.248-0.5,0.553V144h1v-2.95
+                        C573.084,140.745,572.891,140.497,572.584,140.497z"/>
+                    <path fill="#FFFFFF" d="M452.221,103.868c1.449-1.835,3.497,0.455,4.542-1.637c0-1.088,0.057-1.566,0.057-2.654
+                        c0-0.664-0.145-4.886-2.707-4.918c-0.706-0.008-2.905-0.899-3.593-0.693C444.249,95.853,449.031,107.911,452.221,103.868z"/>
+                    <path fill="#FFFFFF" d="M450.367,73.458c0.631-0.435,2.907,0.455,3.724-1.621c0.513-1.299,2.577-0.812,1.628-3.609
+                        c-0.214-0.627-1.708-4.581-4.146-3.787c-0.671,0.219-3.04,0.081-3.624,0.498C445.01,67.036,447.768,76.055,450.367,73.458z"/>
+                    <path fill="#FFFFFF" d="M440.573,73.869c-0.731-0.4-0.797-4.582-3.171-4.725c-2.45-0.148-8.125-2.254-5.885,3.852
+                        c0.244,0.664,0.193,3.036,0.633,3.604C434.354,79.459,443.264,76.37,440.573,73.869z"/>
+                    <path fill="#FFFFFF" d="M428.293,83.542c-1.297,0.201-4.405-5.708-7.438-0.793c-0.349,0.564-2.443,4.234-0.279,5.606
+                        c0.597,0.379,1.999,2.292,2.691,2.478C426.756,91.763,431.951,83.891,428.293,83.542z"/>
+                    <path fill="#FFFFFF" d="M547.084,142.253c-0.204,0,0,0.165,0,0.369V144l0,0v-1.377
+                        C547.084,142.418,547.289,142.253,547.084,142.253z"/>
+                    <path fill="#FFFFFF" d="M542.584,140.497c-0.307,0-0.5,0.248-0.5,0.553V144h1v-2.95
+                        C543.084,140.745,542.891,140.497,542.584,140.497z"/>
+                    <path fill="#FFFFFF" d="M552.084,140.497c-0.305,0,0,0.248,0,0.553V144l0,0v-2.95
+                        C552.084,140.745,552.389,140.497,552.084,140.497z"/>
+                    <path fill="#FFFFFF" d="M441.864,91.767c-5.136-3.917-6.827,3.693-7.818,4.133c-2.137,0.952-1.385,2.615,0.922,3
+                        c1.04-0.32,2.343,0.856,3.382,0.537c0.635-0.195,4.629-1.573,3.906-4.032C442.056,94.726,442.433,92.202,441.864,91.767z"/>
+                    <path fill="#FFFFFF" d="M600.502,129h3.582v-2h-3.582c-0.305,0-0.553,0.695-0.553,1C599.95,128.306,600.198,129,600.502,129z"/>
+                    <path fill="#FFFFFF" d="M600.502,118h3.582v-1h-3.582c-0.305,0-0.553,0.193-0.553,0.5C599.95,117.805,600.198,118,600.502,118z"/>
+                    <path fill="#FFFFFF" d="M600.502,139h3.582v-1h-3.582c-0.305,0-0.553,0.193-0.553,0.5C599.95,138.805,600.198,139,600.502,139z"/>
+                    <path fill="#FFFFFF" d="M601.708,133.5c0,0.204,0.165,0.5,0.368,0.5h2.009v-1h-2.009C601.873,133,601.708,133.296,601.708,133.5z"
+                        />
+                    <path fill="#FFFFFF" d="M600.502,108h3.582v-1h-3.582c-0.305,0-0.553,0.194-0.553,0.5S600.198,108,600.502,108z"/>
+                    <path fill="#FFFFFF" d="M671.191,119.649c23.698-40.924-15.227-82.816-68.713-79.875C593.35,17.723,573.26,4.084,541.172,0
+                        c-4.016,0-8.078,0-12.107,0c-23.488,1.634-39.707,12-51.179,21.314c-48.167-18.837-106.919,7.983-105.157,50.747
+                        c-29.31,6.748-46.927,22.77-52.645,48.121c0,3.682,0,7.384,0,11.085c5.718,25.582,23.815,40.532,51.305,48.542
+                        c0.685,34.233,29.355,59.191,72.112,59.098c18.478-0.055,31.302-5.144,43.116-11.621c11.206,7.799,24.032,14.211,42.438,15.316
+                        c35.621,2.104,58.575-14.785,71.439-31.657c49.987,5.976,80.59-16.227,87.59-49.083c0-3.698,0-7.391,0-11.087
+                        C685.084,137.864,679.067,128.245,671.191,119.649z M519.194,203.233l-1.428-0.341l-51.198-51.2l1.198-1.2l51.195,51.195
+                        L519.194,203.233z M517.64,204.992L515.933,205h-0.005l-51.189-51.334l1.574-1.612l51.189,51.154L517.64,204.992z
+                         M412.899,109.375c-0.009,0.402-0.362,0.73-0.806,0.73c-0.442,0-0.797-0.329-0.806-0.73l-0.917-40.745
+                        c-0.009-0.401,0.362-0.631,0.806-0.631h1.761c0.442,0,0.813,0.229,0.806,0.631L412.899,109.375z M413.596,66.578
+                        c-0.358,0.635-1.111,0.522-1.599,0.521c-0.543-0.001-1.137,0.2-1.519-0.617c-0.415-0.897-0.527-1.426-0.546-2.845
+                        c-0.032-2.711,2.596-2.905,1.315-6.295c1.176,0,2.878,2.13,2.878,4.843C414.127,63.775,414.103,65.68,413.596,66.578z
+                         M416.212,85.977c0-13.232,16.955-24.729,37.86-25.673c12.087-0.546,21.333,1.993,26.975,6.183
+                        c1.865,1.385,2.117,5.292-3.982,4.722c-10.188-0.953-7.694,2.26-4.673,3.864c2.669,1.415,12.193,2.399,14.628,3.503
+                        c5.861,2.657,4.586,6.338,4.234,7.469c-3.387,10.937-18.042,18.744-35.775,20.871h-0.002
+                        C435.909,109.263,416.212,99.208,416.212,85.977z M455.801,140.926l1.201-1.2l8.169,8.17l-1.2,1.2L455.801,140.926z
+                         M463.717,149.351l-1.575,1.575l-8.17-8.17l1.575-1.575L463.717,149.351z M446.861,138.552c-0.543-1.17-0.573-2.128-0.079-2.78
+                        c0.03-0.035,0.055-0.071,0.087-0.101l1.527-1.523c0.781-0.773,2.244-0.681,2.925-0.102l2.785,2.785l-4.484,4.483L446.861,138.552z
+                         M449.875,141.568l4.483-4.484l2.418,2.417l-4.482,4.484L449.875,141.568z M452.518,144.209l1.2-1.2l8.17,8.17l-1.2,1.2
+                        L452.518,144.209z M460.913,152.604l4.483-4.484l2.147,2.148l-4.484,4.483L460.913,152.604z M463.285,154.976l1.199-1.2
+                        l51.197,51.197l0.211,1.408l-1.414-0.211L463.285,154.976z M514.922,206.614l1.374,0.174l-0.226-1.686l1.878,0.053l-0.084-1.932
+                        l1.804,0.467l-0.189-1.487l3.891,7.332l-0.337,0.871l-0.884,0.324L514.922,206.614z M524.809,212.425l-2.273-1.45l0.773-0.285
+                        l0.303-0.774l1.468,2.239L524.809,212.425z M605.084,83.368V146h-1.458h-10.665h-50.139h-17.744l12.548-12.52l55.122-55.322
+                        l12.336-12.533V83.368z"/>
+                    <path fill="#FFFFFF" d="M590.584,98.459l-32.79,32.857c-1.34,1.34-0.844,2.684,1.053,2.684h30.668c1.896,0,3.569-2.044,3.569-3.94
+                        V99.394C593.084,97.5,591.926,97.119,590.584,98.459z"/>
+                    <path fill="#FFFFFF" d="M598.084,142.623c0-0.204-0.296-0.369-0.5-0.369s-0.5,0.165-0.5,0.369V144h1V142.623z"/>
+                    <path fill="#FFFFFF" d="M601.708,92.5c0,0.204,0.165,0.5,0.368,0.5h2.009v-1h-2.009C601.873,92,601.708,92.296,601.708,92.5z"/>
+                    <path fill="#FFFFFF" d="M601.708,102.5c0,0.204,0.165,0.5,0.368,0.5h2.009v-1h-2.009C601.873,102,601.708,102.296,601.708,102.5z"
+                        />
+                    <path fill="#FFFFFF" d="M601.708,113c0,0.204,0.165,0,0.368,0h2.009l0,0h-2.009C601.873,113,601.708,112.797,601.708,113z"/>
+                    <path fill="#FFFFFF" d="M600.502,98h3.582v-1h-3.582c-0.305,0-0.553,0.194-0.553,0.5S600.198,98,600.502,98z"/>
+                    <path fill="#FFFFFF" d="M601.708,122.5c0,0.205,0.165,0.5,0.368,0.5h2.009v-1h-2.009C601.873,122,601.708,122.297,601.708,122.5z"
+                        />
+                    <path fill="#FFFFFF" d="M600.502,88h3.582v-1h-3.582c-0.305,0-0.553,0.194-0.553,0.5S600.198,88,600.502,88z"/>
+                </g>
+            </g>
+        </svg>
+    </div>
+    
+    <div id="ux-design" class="step design" data-x="1100" data-y="-750" data-scale="0.8">
+      <!-- Rémy Médard, from The Noun Project (http://thenounproject.com/noun/community/#icon-No2554) -->
+      <svg width="688.084px" height="737.368px">
+        <g>
+          <path fill="#FFFFFF" d="M671.191,119.649c23.699-40.924-15.226-82.816-68.712-79.875C593.35,17.723,573.26,4.084,541.172,0
+            c-4.016,0-8.078,0-12.108,0c-23.488,1.634-39.707,12-51.178,21.314c-48.167-18.837-106.919,7.983-105.158,50.747
+            c-29.309,6.748-46.926,22.77-52.644,48.121c0,3.682,0,7.384,0,11.085c5.718,25.582,23.815,40.532,51.305,48.542
+            c0.684,34.233,29.355,59.191,72.112,59.098c18.478-0.055,31.302-5.144,43.116-11.621c11.206,7.799,24.032,14.211,42.438,15.316
+            c35.621,2.104,58.575-14.785,71.439-31.657c49.987,5.976,80.59-16.227,87.59-49.083c0-3.698,0-7.391,0-11.087
+            C685.084,137.864,679.067,128.245,671.191,119.649z"/>
+          <path fill="#FFFFFF" d="M387.336,243.741c-8.17,0-14.795,6.623-14.795,14.794c0,8.17,6.625,14.794,14.795,14.794
+            c8.179,0,14.803-6.625,14.803-14.794C402.139,250.364,395.515,243.741,387.336,243.741z"/>
+          <path fill="#FFFFFF" d="M358.776,278.094c-5.814,0-10.514,4.707-10.514,10.521c0,5.804,4.699,10.521,10.514,10.521
+            c5.813,0,10.521-4.717,10.521-10.521C369.296,282.801,364.589,278.094,358.776,278.094z"/>
+          <path fill="#FFFFFF" d="M334.252,305.933c-4.171,0-7.565,3.383-7.565,7.555c0,4.178,3.394,7.565,7.565,7.565
+            c4.18,0,7.564-3.387,7.564-7.565C341.816,309.316,338.432,305.933,334.252,305.933z"/>
+        </g>
+        <g>
+          <path fill="#3584A0" d="M620.481,148.546c0,0-2.64-6.797-6.82-7.479c-4.187-0.687-9.557-2.19-11.805-3.886
+            c-1.313-0.997-5.59-2.749-7.573-3.47c-0.924-0.333-2.507-3.079-3.054-4.313c-0.546-1.237-4.321-3.738-5.282-3.879l-0.155-5.15
+            l10.92-3.394c0,0,2.817-1.305,3.088-1.305c0.276,0-1.302-2.071-1.507-2.623c-0.206-0.549-1.234-4.302-1.234-4.302
+            s3.688,4.507,5.556,5.35c0,0-3.671-6.894-4.764-10.731c-1.099-3.843-1.82-9.844-1.82-10.39c0-0.552-2.265-16.667-3.499-19.341
+            c-1.234-2.677-2.907-6.311-5.775-8.094c-2.868-1.784-7.116-4.322-13.222-4.663c-0.09-0.003-0.181-0.003-0.273-0.011
+            c-0.09,0.008-0.181,0.008-0.276,0.011c-6.102,0.341-10.351,2.879-13.219,4.663c-2.862,1.783-4.541,5.417-5.775,8.094
+            c-1.236,2.673-3.499,18.789-3.499,19.341c0,0.546-0.64,6.792-1.735,10.63c-1.096,3.843-4.846,10.492-4.846,10.492
+            c1.87-0.848,5.55-5.356,5.55-5.356s-1.324,4.119-1.532,4.671c-0.209,0.55-1.482,2.257-1.206,2.257
+            c0.273,0,3.085,1.305,3.085,1.305l10.923,3.392l-0.158,5.147c-0.958,0.141-4.729,2.637-5.279,3.874
+            c-0.357,0.806-1.158,2.245-1.925,3.243c9.948,4.012,15.77,10.059,16.006,16.635c0.163,1.172,6.198,22.738,6.545,27.738h45.961
+            C621.918,176,620.496,148.757,620.481,148.546z"/>
+          <path fill="#3584A0" d="M454.084,153.097l0.195-0.276c2.971-12.841,18.523-18.975,26.97-22.654
+            c-5.128-2.344-7.791-4.094-9.06-4.378c-0.519-1.04-1.607-8.88-1.607-8.88s6.168-5.446,7.555-15.873c0,0,3.037,1.679,3.229-4.666
+            c0.141-4.888,0.985-6.798-2.342-8.227c0,0,0.244-3.381,0.349-6.384c0.166-4.449,0.982-10.695-6.714-15.718
+            c-1.094-0.713-6.741-3.854-6.777-3.837c-2.012-1.223-4.57-2-4.57-2l0.079,1.834c-0.135-0.135-0.276-0.279-0.4-0.403
+            c-0.507-0.524-0.794-2.547-0.743-3.347c0.096-1.423,0.096-1.423,0.096-1.423c-3.646,2.722-6.161,6.238-6.161,6.238l0.326-3.401
+            c0,0-0.679,1.042-9.021,6.252c-8.188,5.11-6.832,12.652-6.607,17.118c0.152,3,0.451,5.071,0.451,5.071
+            c-3.324,1.429-1.583,3.468-1.499,8.356c0.107,6.761,3.517,5.57,3.517,5.57c1.569,9.209,6.406,14.836,6.406,14.836
+            s-1.369,7.888-1.894,8.889c-1.51,0.338-4.992,2.741-12.3,5.784c-10.771,4.482-7.388,2.051-16.155,6.432
+            C403.55,144.938,406.297,174,406.297,174h43.648l4.139-20.624V153.097z"/>
+          <polygon fill="#3584A0" points="573.375,192.579 573.375,192.573 573.375,192.573 		"/>
+          <path fill="#3584A0" d="M544.18,135.21c-6.852-1.758-12.597-5.694-12.597-5.694c-0.848-0.482-0.718-4.93-0.718-4.93l-4.252-0.64
+            c0-0.364-0.36-5.697-0.36-5.697c5.085-1.696,4.562-11.706,4.562-11.706c3.229,1.778,5.33-6.136,5.33-6.136
+            c3.82-11.004-1.901-10.342-1.901-10.342c1.816-8.235,0-20.268,0-20.268c-2.545-22.288-40.843-16.239-36.302-8.957
+            c-11.19-2.059-8.638,23.249-8.638,23.249l2.429,6.542c-4.77,3.068-1.457,6.784-1.296,11.063c0.236,6.311,4.119,5.004,4.119,5.004
+            c0.242,10.418,5.409,11.788,5.409,11.788c0.969,6.542,0.366,5.429,0.366,5.429l-4.604,0.552c0.202,1.654-0.361,4.438-0.361,4.438
+            c-5.426,2.395-6.581,3.8-11.956,6.139c-10.391,4.522-21.686,10.621-23.691,18.543c-2.009,7.919-7.964,39.414-7.964,39.414h121.62
+            c-0.004-9-9.3-43.282-9.3-43.282C564.076,144.627,557.382,138.599,544.18,135.21z"/>
+        </g>
+      </svg>
+    </div>
+    
+    <div id="blocks" class="step design" data-x="1100" data-y="-110" data-scale="0.8">
+      <svg class="design-arrow" width="77.545px" height="101.972px">
+        <polygon points="56.803,58 56.803,0 21.803,0 21.803,58 0,58 38.772,101.972 77.545,58 "/>
+      </svg>
+      <div class="block block1 filled"></div>
+      <div class="block block2 filled"></div>
+      <div class="block block3 filled"></div>
+      <div class="block block4 filled"></div>
+      <div class="block block5 filled"></div>
+      <div class="block block6 filled"></div>
+      <div class="block block7 filled"></div>
+    </div>
+    
+    <div id="blocks-example" class="step design example" data-x="1100" data-y="-110" data-scale="0.8">
+      <div class="block block1">My Travel</div>
+      <div class="block block2">Live Trains</div>
+      <div class="block block3">Train Tickets</div>
+      <div class="block block4">Maps</div>
+      <div class="block block5">Timetables</div>
+      <div class="block block6">Blog / News</div>
+      <div class="block block7">Stations & Facilities</div>
+    </div>
+    
+    <div id="prioritise" class="step design" data-x="1100" data-y="505" data-scale="0.8">
+      <svg class="design-arrow" width="77.545px" height="101.972px">
+        <polygon points="56.803,58 56.803,0 21.803,0 21.803,58 0,58 38.772,101.972 77.545,58 "/>
+      </svg>
+      <div class="block block3 filled computer">Train Tickets<span class="priority">1.</span></div>
+      <div class="block block2 filled computer">Live Trains<span class="priority">2.</span></div>
+      <div class="block block6 filled computer">Blog / News<span class="priority">3.</span></div>
+      <div class="block block4 filled computer">Maps<span class="priority">4.</span></div>
+      <div class="block block5 filled computer">Timetables<span class="priority">5.</span></div>
+      <div class="block block7 filled computer">Stations & Facilities<span class="priority">6.</span></div>
+      <div class="block block1 filled computer reduce">My Travel<span class="priority">7.</span></div>
+    </div>
+    
+    <div id="prioritise-for-devices" class="step design" data-x="1100" data-y="505" data-scale="0.8">
+      <svg class="computer" width="158px" height="120.081px">
+        <g>
+          <path fill="#FFFFFF" d="M101.807,117.274c0,0-0.015-0.016-0.034-0.016c-0.384-0.31-3.452-2.795-5.031-5.278
+		c0,0-0.502-0.324-0.953-4.406C95.129,101.793,94.576,97,94.576,97H63.448c0,0-0.566,4.793-1.211,10.574
+		c-0.468,4.078-0.968,4.252-0.968,4.252c-1.679,2.642-5.068,5.367-5.068,5.367s-2.21,2.268,0.581,2.651
+		c0.113,0.015,0.243,0.049,0.388,0.067c0.127,0.015,0.258,0.026,0.371,0.026c0.806,0.04,2.388,0.068,4.47,0.087
+		c0.63,0,1.453,0.023,2.455,0.023c3.6,0.013,9.359,0.032,15.266,0.032c3.418,0,6.869,0.001,9.988-0.018
+		c2.111-0.016,3.903-0.016,5.211-0.016c0.853-0.018,1.628-0.018,2.336-0.018c1.295-0.031,2.31-0.047,2.973-0.064
+		c0.257-0.019,0.469-0.019,0.613-0.034c0.854-0.064,1.34-0.258,1.582-0.53c0.479-0.568-0.02-1.391-0.37-1.823
+		C101.918,117.385,101.807,117.274,101.807,117.274z"/>
+          <path fill="#FFFFFF" d="M153.933,0H79.519h-1.032H4.067C4.067,0,0,0.327,0,3.228v88.668
+		c0,0,0.465,3.388,3.847,3.624c3.254,0.233,70.137,0.021,75.251,0c7.532,0.025,71.82,0.228,75.002,0
+		c3.385-0.236,3.9-3.624,3.9-3.624V3.228C158,0.327,153.933,0,153.933,0z M151,88H7V6h144.454L151,6.127V88z"/>
+        </g>
+      </svg>
+
+      <svg class="tablet" width="156.471px" height="120px">
+        <path fill="#FFFFFF" d="M0,6.635v106.744C0,117.032,2.971,120,6.628,120h143.217c3.658,0,6.626-2.968,6.626-6.621V6.635
+	c0-3.669-2.968-6.635-6.626-6.635H6.628C2.971,0,0,2.966,0,6.635z M153.48,60.003c0,2.332-1.883,4.22-4.207,4.22
+	c-2.334,0-4.217-1.888-4.217-4.22c0-2.331,1.883-4.222,4.217-4.222C151.598,55.781,153.48,57.672,153.48,60.003z M138.907,12.264
+	c1.462,0,2.643,1.186,2.643,2.648v90.173c0,1.459-1.182,2.649-2.643,2.649H16.91c-1.461,0-2.662-1.19-2.662-2.649V14.912
+	c0-1.464,1.2-2.648,2.662-2.648H138.907z"/>
+      </svg>
+      <div class="block block3 filled tablet">Train Tickets<span class="priority">1.</span></div>
+      <div class="block block1 filled tablet">My Travel<span class="priority">2.</span></div>
+      <div class="block block2 filled tablet">Live Trains<span class="priority">3.</span></div>
+      <div class="block block4 filled tablet">Maps<span class="priority">4.</span></div>
+      <div class="block block5 filled tablet">Timetables<span class="priority">5.</span></div>
+      <div class="block block7 filled tablet">Stations & Facilities<span class="priority">6.</span></div>
+      <div class="block block6 filled tablet reduce">Blog / News<span class="priority">7.</span></div>
+
+      <svg class="smartphone" width="63.6px" height="120px">
+        <path fill="#FFFFFF" d="M58.716,0H6.086C3.056,0,0,2.545,0,5.684v108.631C0,117.455,3.056,120,6.086,120h52.63
+	c3.03,0,4.884-2.545,4.884-5.684V5.684C63.6,2.545,61.746,0,58.716,0z M21,4.8h22.8c0.994,0,1.8,0.806,1.8,1.8
+	c0,0.995-0.806,1.801-1.8,1.801H21c-0.995,0-1.8-0.806-1.8-1.801C19.2,5.605,20.005,4.8,21,4.8z M32.401,117.112
+	c-3.261,0-5.906-2.735-5.906-6.112c0-3.375,2.645-6.112,5.906-6.112c3.259,0,5.904,2.737,5.904,6.112
+	C38.305,114.377,35.66,117.112,32.401,117.112z M58.8,102H6V14.4h52.8V102z"/>
+      </svg>
+      <div class="block block1 filled smartphone">My Travel<span class="priority">1.</span></div>
+      <div class="block block2 filled smartphone">Live Trains<span class="priority">2.</span></div>
+      <div class="block block3 filled smartphone">Train Tickets<span class="priority">3.</span></div>
+      <div class="block block4 filled smartphone reduce">Maps<span class="priority">4.</span></div>
+      <div class="block block5 filled smartphone reduce">Timetables<span class="priority">5.</span></div>
+      <div class="block block7 filled smartphone reduce">Stations & Facilities<span class="priority">6.</span></div>
+      <div class="block block6 filled smartphone reduce">Blog / News<span class="priority">7.</span></div>
+    </div>
+
+    <div id="reduce-for-devices" class="step design" data-x="1100" data-y="505" data-scale="0.8">
+    </div>
+    
+    <div id="organise" class="step design" data-x="1100" data-y="1113" data-scale="0.8">
+      <svg class="design-arrow" width="77.545px" height="101.972px">
+        <polygon points="56.803,58 56.803,0 21.803,0 21.803,58 0,58 38.772,101.972 77.545,58 "/>
+      </svg>
+
+      <div class="block block1 filled smartphone"></div>
+      <div class="block block2 filled smartphone"></div>
+      <div class="block block3 filled smartphone"></div>
+
+      <div class="block block1 filled tablet"></div>
+      <div class="block block2 filled tablet"></div>
+      <div class="block block3 filled tablet"></div>
+      <div class="block block4 filled tablet"></div>
+      <div class="block block5 filled tablet"></div>
+      <div class="block block7 filled tablet"></div>
+
+      <div class="block block2 filled computer"></div>
+      <div class="block block3 filled computer"></div>
+      <div class="block block4 filled computer"></div>
+      <div class="block block5 filled computer"></div>
+      <div class="block block6 filled computer"></div>
+      <div class="block block7 filled computer"></div>
+
+      <svg class="devices" width="768" height="624" viewBox="154.28 90.247 767.211 623.917">
+        <path fill="#FFFFFF" d="M276.605,90.783H166.959c-6.312,0-12.679,5.302-12.679,11.841v226.313
+	c0,6.544,6.367,11.846,12.679,11.846h109.646c6.313,0,10.175-5.302,10.175-11.841V102.624
+	C286.78,96.085,282.918,90.783,276.605,90.783z M198.031,100.783h47.499c2.072,0,3.75,1.678,3.75,3.75
+	c0,2.073-1.678,3.751-3.75,3.751h-47.499c-2.074,0-3.751-1.678-3.751-3.751C194.28,102.461,195.957,100.783,198.031,100.783z
+	 M221.782,334.767c-6.794,0-12.305-5.698-12.305-12.732c0-7.031,5.51-12.734,12.305-12.734c6.791,0,12.3,5.703,12.3,12.734
+	C234.082,329.068,228.573,334.767,221.782,334.767z M276.78,303.284h-110v-182.5h110V303.284z"/>
+        <path fill="#FFFFFF" d="M595.51,104.07v222.385c0,7.609,6.188,13.792,13.809,13.792h298.369
+	c7.62,0,13.804-6.183,13.804-13.792V104.07c0-7.644-6.184-13.823-13.804-13.823h-298.37C601.698,90.247,595.51,96.426,595.51,104.07
+	z M915.261,215.254c0,4.858-3.922,8.79-8.764,8.79c-4.864,0-8.788-3.932-8.788-8.79c0-4.854,3.924-8.796,8.788-8.796
+	C911.339,206.458,915.261,210.399,915.261,215.254z M884.9,115.798c3.045,0,5.504,2.47,5.504,5.515v187.861
+	c0,3.04-2.46,5.521-5.504,5.521H630.737c-3.044,0-5.544-2.48-5.544-5.521V121.313c0-3.048,2.5-5.515,5.544-5.515H884.9z"/>
+        <g>
+          <path fill="#FFFFFF" d="M555.561,707.328c0,0-0.034-0.038-0.083-0.038c-0.934-0.754-8.404-6.806-12.249-12.851
+		c0,0-1.222-0.274-2.318-10.212c-1.607-14.075-2.952-25.229-2.952-25.229H462.17c0,0-1.378,11.152-2.95,25.229
+		c-1.139,9.93-2.356,10.094-2.356,10.094c-4.09,6.433-12.34,12.938-12.34,12.938s-5.382,5.455,1.416,6.391
+		c0.275,0.035,0.591,0.088,0.944,0.133c0.311,0.037,0.627,0.048,0.902,0.048c1.963,0.097,5.813,0.158,10.883,0.204
+		c1.534,0,3.538,0.054,5.976,0.054c8.765,0.03,22.787,0.076,37.17,0.076c8.321,0,16.724,0,24.317-0.045
+		c5.14-0.037,9.503-0.037,12.688-0.037c2.077-0.045,3.963-0.045,5.688-0.045c3.152-0.075,5.622-0.112,7.235-0.157
+		c0.628-0.044,1.144-0.044,1.494-0.082c2.082-0.157,3.263-0.627,3.852-1.292c1.169-1.383-0.048-3.385-0.898-4.438
+		C555.833,707.597,555.561,707.328,555.561,707.328z"/>
+          <path fill="#FFFFFF" d="M682.473,422H501.297h-2.514H317.595c0,0-9.595,0.598-9.595,7.66v215.881
+		c0,0,0.978,8.249,9.212,8.823c7.921,0.567,170.687,0.053,183.137,0c18.337,0.061,174.132,0.554,181.88,0
+		c8.239-0.574,8.771-8.823,8.771-8.823V429.66C691,422.598,682.473,422,682.473,422z M676,637H323V437h353.438L676,436.72V637z"/>
+        </g>
+      </svg>
+    </div>
+    
+    
+    <!-- INTERACTION DESIGN -->
+
+    <div id="content-first" class="step" data-x="-850" data-y="850">
+      <h1>Content First</h1>
+    </div>
+
+    <div id="content-first-example1" class="step" data-x="-850" data-y="850">
+      <img src="assets/quiterss.jpg" />
+    </div>
+    <div id="content-first-example2" class="step" data-x="-850" data-y="850">
+      <img src="assets/newsbento.jpg" />
+    </div>
+
+    <div id="content-first-example3" class="step" data-x="-850" data-y="850">
+      <img src="assets/facebook-old.jpg" />
+    </div>
+    <div id="content-first-example4" class="step" data-x="-850" data-y="850">
+      <img src="assets/facebook-now.PNG" />
+    </div>
+    <div id="content-first-example5" class="step" data-x="-850" data-y="850">
+      <img src="assets/facebook-menu.PNG" />
+    </div>
+
+    <div id="manipulate-content" class="step" data-x="-850" data-y="1250">
+      <blockquote>
+        buttons are a hack
+        <cite>- Josh Clark</cite>
+      </blockquote>
+    </div>
+
+    <div id="gestures-examples" class="step" data-x="-850" data-y="1250">
+      <img src="assets/clear.jpg" />
+      <img src="assets/rise.jpg" />
+    </div>
+
+    <div id="postures-smartphone" class="step" data-x="-1100" data-y="1150">
+      <!-- http://www.lukew.com/ff/entry.asp?1609 -->
+      <svg width="557.046px" height="254.524px">
+        <g>
+          <path fill="#FFFFFF" d="M75.429,3.375H7.818C3.926,3.375,0,6.644,0,10.676v139.551
+		c0,4.034,3.926,7.304,7.818,7.304h67.611c3.892,0,6.273-3.27,6.273-7.301V10.676C81.702,6.644,79.321,3.375,75.429,3.375z
+		 M26.977,9.541h29.29c1.277,0,2.312,1.035,2.312,2.313c0,1.278-1.034,2.313-2.312,2.313h-29.29c-1.278,0-2.313-1.035-2.313-2.313
+		C24.664,10.576,25.699,9.541,26.977,9.541z M41.624,153.821c-4.19,0-7.588-3.514-7.588-7.853c0-4.334,3.398-7.852,7.588-7.852
+		c4.187,0,7.584,3.518,7.584,7.852C49.208,150.307,45.811,153.821,41.624,153.821z M75.536,134.407H7.708V21.874h67.829V134.407z"/>
+          <g>
+            <polygon fill="#FFFFFF" points="82.8,217.708 82.8,135 124.51,217.375 		"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M124.55,217.708c0,0-2.5-21.084-5-31.584s4.25-52.125,1-62.25
+			c-6.098-18.999-38.25-38.5-38.25-38.5v30l-7.237,6.363"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M83.466,130.708c0,0-33.667-34.334-37.667-39
+			s-15.148,2.314-9.148,10.648s26.19,35.019,28.523,46.019s-0.23,12.405,1.375,20.25c1.636,7.996,5.16,13.154,6.25,15
+			c2.138,3.619,6.561,6.816,8.228,15.15s2.439,18.934,2.439,18.934"/>
+          </g>
+        </g>
+        <g>
+          <path fill="#FFFFFF" d="M282.763,0.375h-67.611c-3.892,0-7.818,3.269-7.818,7.302v139.551
+		c0,4.034,3.926,7.304,7.818,7.304h67.611c3.892,0,6.273-3.27,6.273-7.301V7.676C289.036,3.644,286.654,0.375,282.763,0.375z
+		 M234.311,6.541h29.29c1.277,0,2.312,1.035,2.312,2.313c0,1.278-1.034,2.313-2.312,2.313h-29.29c-1.278,0-2.313-1.035-2.313-2.313
+		C231.998,7.576,233.032,6.541,234.311,6.541z M248.957,150.821c-4.19,0-7.588-3.514-7.588-7.853c0-4.334,3.398-7.852,7.588-7.852
+		c4.187,0,7.584,3.518,7.584,7.852C256.542,147.307,253.144,150.821,248.957,150.821z M282.87,131.407h-67.829V18.874h67.829
+		V131.407z"/>
+          <g>
+            <polygon fill="#FFFFFF" points="165.8,131.542 205.967,51.708 205.3,151.542 		"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M165.8,132.125c0,0,6-22,6.5-31.25s-3.583-47.755-3.25-57.75
+			c0.25-7.5,17.148-41.25,46.25-42.625c0,0-7.5,0.25-7.875,8.875s-0.125,26-0.125,26l5.933,4.436"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M205.3,151.542c0,0,1.667-35.75,4.667-41
+			s8.737-13.069,11.083-17.917c3.75-7.75,3.632-26.892,4.25-30.083c1-5.167,24.015-36.959,29.515-45.209s-4.348-15.791-9.848-10.791
+			s-39.667,41.5-39.667,41.5"/>
+          </g>
+          <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M310.05,254.375c0,0,1.25-4-3.25-11.5s-29.75-17.5-37.75-30
+		s-20.101-46.381-22.5-50c-1.74-2.625,1.75-12.125,9.882-6.5c12.173,8.421,23.118,37.25,23.368,38.25s0.5-6.75,0.5-6.75
+		s-21.736-77.5-23.868-86s8.118-13.5,12.868-6.25s23,61.906,23,61.906s-0.25-0.656-0.25-11.906c0-6.119,10.595-10.828,15.125-5.375
+		c2.512,3.023,5.875,14.625,5.875,14.625s-1.408-6.834-1.75-11.25c-0.715-9.236,15.509-8.602,17.75-2.5l3.083,11.667
+		c0,0,0.14-6.571,1.167-7.834c4-4.916,11.11-3.176,14.75-0.083c9.417,8,14.513,55.964,14.513,64.63s-2.003,17.342-2.096,20.37
+		c-0.093,3.04,6.083,24.5,6.083,24.5"/>
+        </g>
+        <g>
+          <path fill="#FFFFFF" d="M507.095,3.375h-67.61c-3.892,0-7.817,3.269-7.817,7.302v139.551
+		c0,4.034,3.926,7.304,7.817,7.304h67.61c3.893,0,6.273-3.27,6.273-7.301V10.676C513.368,6.644,510.987,3.375,507.095,3.375z
+		 M458.644,9.541h29.289c1.277,0,2.313,1.035,2.313,2.313c0,1.278-1.035,2.313-2.313,2.313h-29.289
+		c-1.278,0-2.313-1.035-2.313-2.313C456.331,10.576,457.365,9.541,458.644,9.541z M473.29,153.821c-4.189,0-7.588-3.514-7.588-7.853
+		c0-4.334,3.398-7.852,7.588-7.852c4.188,0,7.584,3.518,7.584,7.852C480.874,150.307,477.478,153.821,473.29,153.821z
+		 M507.202,134.407h-67.828V21.874h67.828V134.407z"/>
+          <g>
+            <polygon fill="#FFFFFF" points="515.466,217.375 513.8,133.666 556.55,217.375 		"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M507.063,121.737l7.237-6.363v-30c0,0,32.152,19.501,38.25,38.5
+			c3.25,10.125-3.5,51.75-1,62.25s5,31.584,5,31.584"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M515.466,217.708c0,0-0.771-10.6-2.438-18.934
+			s-6.089-11.531-8.228-15.15c-1.09-1.846-4.613-7.004-6.25-15c-1.605-7.845,0.097-8.125-2.236-19.125s-11.639-29.042-17.639-37.375
+			s7.5-14.542,11.5-9.875s25.291,28.459,25.291,28.459"/>
+          </g>
+          <g>
+            <polygon fill="#FFFFFF" points="389.241,217.375 431.667,133.666 430.324,217.375 		"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M438.593,122.737l-7.293-6.363v-30
+			c0,0-32.097,19.501-38.194,38.5c-3.25,10.125,3.528,51.75,1.028,62.25s-5.015,31.584-5.015,31.584"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M430.245,218.708c0,0,0.771-10.6,2.438-18.934
+			s6.089-11.531,8.228-15.15c1.09-1.846,4.613-7.004,6.25-15c1.605-7.845-0.097-8.125,2.236-19.125s11.639-29.042,17.639-37.375
+			s-7.5-14.542-11.5-9.875s-25.291,28.459-25.291,28.459"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div id="touch-areas-smartphone" class="step" data-x="-1100" data-y="1550">
+      <!-- http://www.lukew.com/ff/entry.asp?1609 -->
+      <svg width="209.402px" height="395.102px">
+        <path fill="#FFFFFF" d="M193.322,0H20.038C10.063,0,0,8.379,0,18.713v357.668c0,10.341,10.063,18.721,20.038,18.721
+	h173.284c9.978,0,16.08-8.38,16.08-18.714V18.713C209.402,8.379,203.3,0,193.322,0z M69.143,15.803h75.069
+	c3.272,0,5.926,2.653,5.926,5.926c0,3.276-2.653,5.929-5.926,5.929H69.143c-3.276,0-5.927-2.652-5.927-5.929
+	C63.215,18.456,65.866,15.803,69.143,15.803z M106.681,385.594c-10.738,0-19.447-9.007-19.447-20.125
+	c0-11.112,8.709-20.125,19.447-20.125c10.73,0,19.438,9.013,19.438,20.125C126.119,376.587,117.411,385.594,106.681,385.594z
+	 M193.6,335.836H19.755V47.414H193.6V335.836z"/>
+        <rect x="20.019" y="47.071" opacity="0.5" fill="#FFFFFF" width="173" height="96"/>
+        <path fill="#83BCD0" d="M193.6,335.836l-173.848,0.234l0.003-193.117c40.264-52.883,89.264-81.133,173.723-95.266"/>
+        <path fill="#3584A0" d="M135.823,335.84c20.586-20.089,33.64-49.98,33.64-83.36c0-60.49-42.867-109.526-95.746-109.526
+	c-20.017,0-38.6,7.027-53.965,19.042l0.003,173.841L135.823,335.84z"/>
+        <text transform="matrix(1 0 0 1 29.2163 76.0708)" fill="#FFFFFF" font-size="24">hard</text>
+        <text transform="matrix(1 0 0 1 130.4697 121.4043)" fill="#FFFFFF" font-size="24">ok</text>
+        <text transform="matrix(1 0 0 1 51.4858 250.0708)" fill="#FFFFFF" font-size="24">easy</text>
+      </svg>
+    </div>
+
+    <div id="postures-tablet" class="step" data-x="-300" data-y="1150">
+      <!-- http://www.lukew.com/ff/entry.asp?1609 -->
+      <svg width="811.612px" height="433.077px">
+        <g>
+          <path fill="#FFFFFF" d="M43.329,197.407V340.67c0,4.901,3.987,8.884,8.895,8.884h192.212
+		c4.909,0,8.893-3.982,8.893-8.884V197.407c0-4.924-3.983-8.905-8.893-8.905H52.224C47.316,188.502,43.329,192.483,43.329,197.407z
+		 M249.315,269.032c0,3.13-2.526,5.663-5.646,5.663c-3.133,0-5.66-2.533-5.66-5.663c0-3.128,2.527-5.667,5.66-5.667
+		C246.789,263.365,249.315,265.904,249.315,269.032z M229.757,204.962c1.962,0,3.546,1.591,3.546,3.554v121.021
+		c0,1.96-1.585,3.557-3.546,3.557H66.023c-1.961,0-3.572-1.597-3.572-3.557V208.516c0-1.965,1.611-3.554,3.572-3.554H229.757z"/>
+          <g>
+            <polygon fill="#FFFFFF" points="254.381,409.262 254.381,326.553 296.091,408.928 		"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M296.131,409.262c0,0-2.5-21.084-5-31.584s4.25-52.125,1-62.25
+			c-6.098-18.998-38.25-38.5-38.25-38.5v30l-7.237,6.363"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M255.047,322.262c0,0-33.666-34.334-37.666-39
+			c-4-4.667-15.148,2.314-9.148,10.647s26.19,35.019,28.523,46.019s-0.23,12.405,1.375,20.25c1.636,7.996,5.16,13.154,6.25,15
+			c2.138,3.619,6.561,6.816,8.228,15.15s2.438,18.934,2.438,18.934"/>
+          </g>
+          <g>
+            <polygon fill="#FFFFFF" points="42.381,413.262 42.381,330.553 0.671,412.928 		"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M0.497,413.262c0,0,2.5-21.084,5-31.584
+			s-4.183-52.125-0.933-62.25c6.098-18.998,38.317-38.5,38.317-38.5v30l7.17,6.363"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M41.581,326.262c0,0,33.666-34.334,37.666-39
+			c4-4.667,15.148,2.314,9.148,10.647s-26.19,35.019-28.523,46.019s0.23,12.405-1.375,20.25c-1.636,7.996-5.16,13.154-6.25,15
+			c-2.138,3.619-6.561,6.816-8.228,15.15s-2.438,18.934-2.438,18.934"/>
+          </g>
+        </g>
+        <g>
+          <path fill="#FFFFFF" d="M554.661,203.405v143.263c0,4.901,3.988,8.884,8.896,8.884h192.212
+		c4.91,0,8.893-3.982,8.893-8.884V203.405c0-4.924-3.982-8.905-8.893-8.905H563.556C558.649,194.5,554.661,198.481,554.661,203.405z
+		 M760.647,275.03c0,3.13-2.525,5.663-5.646,5.663c-3.133,0-5.66-2.533-5.66-5.663c0-3.128,2.527-5.667,5.66-5.667
+		C758.122,269.363,760.647,271.902,760.647,275.03z M741.089,210.96c1.962,0,3.546,1.591,3.546,3.553v121.021
+		c0,1.96-1.585,3.557-3.546,3.557H577.356c-1.961,0-3.572-1.597-3.572-3.557V214.513c0-1.964,1.611-3.553,3.572-3.553H741.089z"/>
+          <g>
+            <polygon fill="#FFFFFF" points="554.381,419.262 554.381,336.553 512.671,418.928 		"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M512.497,419.262c0,0,2.5-21.084,5-31.584
+			s-4.183-52.125-0.933-62.25c6.098-18.998,38.317-38.5,38.317-38.5v30l7.17,6.363"/>
+            <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M553.581,332.262c0,0,33.666-34.334,37.666-39
+			c4-4.667,15.148,2.314,9.148,10.647s-26.19,35.019-28.523,46.019s0.23,12.405-1.375,20.25c-1.637,7.996-5.16,13.154-6.25,15
+			c-2.139,3.619-6.561,6.816-8.228,15.15s-2.438,18.934-2.438,18.934"/>
+          </g>
+          <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M754.631,432.928c0,0,1.25-4-3.25-11.5s-29.75-17.5-37.75-30
+		s-20.101-46.381-22.5-50c-1.74-2.625,1.75-12.125,9.882-6.5c12.173,8.421,23.118,37.25,23.368,38.25s0.5-6.75,0.5-6.75
+		s-21.736-77.5-23.868-86s8.118-13.5,12.868-6.25s23,61.906,23,61.906s-0.25-0.656-0.25-11.906c0-6.119,10.595-10.828,15.125-5.375
+		c2.512,3.023,5.875,14.625,5.875,14.625s-1.408-6.834-1.75-11.25c-0.715-9.236,15.509-8.602,17.75-2.5l3.083,11.667
+		c0,0,0.14-6.571,1.167-7.834c4-4.916,11.11-3.176,14.75-0.083c9.417,8,14.513,55.964,14.513,64.63s-2.003,17.342-2.096,20.37
+		c-0.093,3.04,6.083,24.5,6.083,24.5"/>
+        </g>
+        <g>
+          <path fill="#FFFFFF" d="M293.995,8.905v143.263c0,4.901,3.988,8.884,8.895,8.884h192.213
+		c4.91,0,8.893-3.982,8.893-8.884V8.905c0-4.924-3.982-8.905-8.893-8.905H302.889C297.983,0,293.995,3.981,293.995,8.905z
+		 M499.981,80.53c0,3.13-2.525,5.663-5.646,5.663c-3.133,0-5.66-2.533-5.66-5.663c0-3.128,2.527-5.667,5.66-5.667
+		C497.456,74.864,499.981,77.402,499.981,80.53z M480.422,16.46c1.963,0,3.547,1.591,3.547,3.553v121.021
+		c0,1.96-1.586,3.557-3.547,3.557H316.69c-1.961,0-3.572-1.597-3.572-3.557V20.013c0-1.964,1.611-3.553,3.572-3.553H480.422z"/>
+          <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M245.381,179.262c0,0,19.375-18.709,22.375-26.959
+		c2.63-7.231-0.041-28.042,31.625-57.708c11.666-10.929,21.75-4.417,17.333,1.333c6.334-4.333,17.542-8.875,15.334,4.667
+		c7.083-5.667,22.083-6.292,13.666,8.667c6.667-3.334,17.501-9.334,23.834-9.334s11.458,1.542,16.458,3.875s0.875,8.292-2.458,8.292
+		s-11.459,0.833-14.292,1.583c-5.628,1.49-17.167,15.25-17.5,17.5s0.542,5.584,2,6.625s16.626-11.875,22.292-14.208
+		s11.666,0.666,7.666,5.333s-10.999,12.001-15.666,16.334s-36.167,29.916-64.292,34.291c-4.752,0.739-17.375,19.042-17.375,19.042"
+                  />
+          <path fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M562.331,179.262c0,0-19.375-18.709-22.375-26.959
+		c-2.63-7.231,0.041-28.042-31.625-57.708c-11.666-10.929-21.75-4.417-17.333,1.333c-6.334-4.333-17.542-8.875-15.334,4.667
+		c-7.083-5.667-22.083-6.292-13.666,8.667c-6.667-3.334-17.501-9.334-23.834-9.334s-11.458,1.542-16.458,3.875
+		s-0.875,8.292,2.458,8.292s11.459,0.833,14.292,1.583c5.628,1.49,17.167,15.25,17.5,17.5s-0.542,5.584-2,6.625
+		s-16.626-11.875-22.292-14.208s-11.666,0.666-7.666,5.333s10.999,12.001,15.666,16.334s36.167,29.916,64.292,34.291
+		c4.752,0.739,17.375,19.042,17.375,19.042"/>
+        </g>
+      </svg>
+    </div>
+    <div id="touch-areas-tablet" class="step" data-x="-300" data-y="1550">
+      <!-- http://www.lukew.com/ff/entry.asp?1609 -->
+      <svg width="401.241px" height="307.719px">
+        <rect x="36.613" y="31.151" fill="#3584A0" width="326" height="245"/>
+        <path fill="#83BCD0" d="M365.93,31.694c-26.27,90.481-72.817,154.457-166.386,154.457c-88.932,0-140.486-64.344-166.611-155.239
+	L365.93,31.694z"/>
+        <path fill="#999999" d="M335.93,31.387c-21.925,54.928-75.836,93.764-138.866,93.764c-63.211,0-117.251-39.06-139.055-94.239
+	L335.93,31.387z"/>
+        <path fill="#FFFFFF" d="M0,17.015v273.727c0,9.367,7.619,16.978,16.996,16.978H384.25c9.38,0,16.99-7.61,16.99-16.978
+	V17.015C401.241,7.606,393.63,0,384.25,0H16.996C7.619,0,0,7.606,0,17.015z M393.572,153.867c0,5.98-4.826,10.819-10.786,10.819
+	c-5.986,0-10.814-4.839-10.814-10.819c0-5.977,4.828-10.827,10.814-10.827C388.746,143.04,393.572,147.891,393.572,153.867z
+	 M356.204,31.449c3.749,0,6.774,3.041,6.774,6.79v231.232c0,3.742-3.027,6.794-6.774,6.794H43.362c-3.748,0-6.826-3.052-6.826-6.794
+	V38.239c0-3.753,3.078-6.79,6.826-6.79H356.204z"/>
+        <text transform="matrix(1 0 0 1 173.834 66.1514)" fill="#FFFFFF" font-size="24">hard</text>
+        <text transform="matrix(1 0 0 1 184.7539 169.1514)" fill="#FFFFFF" font-size="24">ok</text>
+        <text transform="matrix(1 0 0 1 177.2319 241.6514)" fill="#FFFFFF" font-size="24">easy</text>
+      </svg>
+    </div>
+
+    <div id="touch-target-sizes1" class="step" data-x="-1400" data-y="550">
+      <!-- Anton Håkanson, from The Noun Project (http://thenounproject.com/noun/mouse/#icon-No10025) -->
+      <svg width="573px" height="438px">
+        <g>
+          <g>
+            <g>
+              <path fill="#FFFFFF" d="M45.845,301.21c1.254,2.838,1.635,6.646,2.031,10.621c0.483,4.839,0.985,9.842,3.04,12.89
+				c2.392,3.546,6.799,3.563,13.792,3.302c3.265-0.125,6.965-0.264,10.724,0.174c9.062,1.051,12.359,11.255,13.498,16.925
+				l-3.329,2.496c-0.625-4.065-2.989-14.86-10.598-15.744c-3.475-0.403-6.873-0.274-10.155-0.151
+				c-6.86,0.258-13.338,0.504-17.004-4.931c-2.577-3.819-3.123-9.297-3.652-14.594c-0.446-4.448-0.905-9.049-2.641-10.951
+				l0.038-0.032L45.845,301.21z M93.747,341.596c1.48-1.11,16.725-9.587,27.728,5.428c2.711,3.696,5.977,8.421,9.61,13.628
+				c-0.45,0.295-10.931,7.201-21.168,14.849l-5.682-7.58c0.812-1.661-0.189-5.049-2.567-8.22c-2.377-3.171-5.351-5.081-7.174-4.767
+				l-6.654-8.87C89.105,345.101,92.547,342.493,93.747,341.596z M78.138,379.524c-11.333-14.767,1.072-27.025,2.554-28.138
+				c1.199-0.901,4.666-3.473,5.943-4.421l6.651,8.869c-0.812,1.665,0.189,5.052,2.567,8.223c2.377,3.173,5.351,5.082,7.175,4.767
+				l5.684,7.578c-10.205,7.688-19.771,15.815-20.18,16.162C84.551,387.622,80.93,383.162,78.138,379.524z M148.228,426.791
+				l-1.153,0.866c-11.869,8.586-29.292,5.069-35.473-4.347c-6.707-10.217-15.163-20.909-22.497-30.032l0.472,0.558
+				c0.101-0.085,10.122-8.617,20.653-16.518c10.535-7.902,21.533-15.131,21.642-15.204l-0.03-0.048
+				c6.62,9.467,14.366,20.334,22.146,29.454C161.299,400.09,159.793,417.804,148.228,426.791z"/>
+            </g>
+
+            <g>
+              <path fill="#FFFFFF" d="M45.845,301.21c1.254,2.838,1.635,6.646,2.031,10.621c0.483,4.839,0.985,9.842,3.04,12.89
+				c2.392,3.546,6.799,3.563,13.792,3.302c3.265-0.125,6.965-0.264,10.724,0.174c9.062,1.051,12.359,11.255,13.498,16.925
+				l-3.329,2.496c-0.625-4.065-2.989-14.86-10.598-15.744c-3.475-0.403-6.873-0.274-10.155-0.151
+				c-6.86,0.258-13.338,0.504-17.004-4.931c-2.577-3.819-3.123-9.297-3.652-14.594c-0.446-4.448-0.905-9.049-2.641-10.951
+				l0.038-0.032L45.845,301.21z M93.747,341.596c1.48-1.11,16.725-9.587,27.728,5.428c2.711,3.696,5.977,8.421,9.61,13.628
+				c-0.45,0.295-10.931,7.201-21.168,14.849l-5.682-7.58c0.812-1.661-0.189-5.049-2.567-8.22c-2.377-3.171-5.351-5.081-7.174-4.767
+				l-6.654-8.87C89.105,345.101,92.547,342.493,93.747,341.596z M78.138,379.524c-11.333-14.767,1.072-27.025,2.554-28.138
+				c1.199-0.901,4.666-3.473,5.943-4.421l6.651,8.869c-0.812,1.665,0.189,5.052,2.567,8.223c2.377,3.173,5.351,5.082,7.175,4.767
+				l5.684,7.578c-10.205,7.688-19.771,15.815-20.18,16.162C84.551,387.622,80.93,383.162,78.138,379.524z M148.228,426.791
+				l-1.153,0.866c-11.869,8.586-29.292,5.069-35.473-4.347c-6.707-10.217-15.163-20.909-22.497-30.032l0.472,0.558
+				c0.101-0.085,10.122-8.617,20.653-16.518c10.535-7.902,21.533-15.131,21.642-15.204l-0.03-0.048
+				c6.62,9.467,14.366,20.334,22.146,29.454C161.299,400.09,159.793,417.804,148.228,426.791z"/>
+            </g>
+          </g>
+          <rect x="46" y="66" fill="#999999" width="108" height="108"/>
+          <g>
+            <g>
+              <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="52" y1="90.5" x2="148" y2="90.5"/>
+              <g>
+                <polygon fill="#FFFFFF" points="54.778,94.203 53.205,90.5 54.778,86.797 46,90.5 				"/>
+              </g>
+              <g>
+                <polygon fill="#FFFFFF" points="145.222,94.203 146.795,90.5 145.222,86.797 154,90.5 				"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 80.3711 85)" fill="#FFFFFF" font-size="18">5mm</text>
+        </g>
+        <g>
+          <path fill="#FFFFFF" d="M456.368,438c0,0,1.096-3.507-2.85-10.082c-3.945-6.576-26.082-15.344-33.096-26.303
+		c-7.015-10.959-17.623-40.662-19.727-43.836c-1.526-2.301,1.534-10.63,8.663-5.699c10.673,7.384,20.269,32.658,20.488,33.535
+		c0.219,0.877,0.438-5.918,0.438-5.918s-19.057-67.945-20.926-75.398c-1.869-7.451,7.118-11.836,11.282-5.479
+		c4.164,6.355,20.165,54.274,20.165,54.274s-0.22-0.575-0.22-10.438c0-5.365,9.289-9.494,13.261-4.713
+		c2.202,2.65,5.15,12.822,5.15,12.822s-1.234-5.991-1.534-9.863c-0.626-8.098,13.598-7.541,15.563-2.191l2.702,10.229
+		c0,0,0.123-5.762,1.023-6.868c3.507-4.31,9.741-2.784,12.932-0.073c8.257,7.014,12.724,49.065,12.724,56.663
+		s-1.756,15.204-1.837,17.858c-0.081,2.666,5.333,21.48,5.333,21.48"/>
+          <rect x="379" y="46" fill="#999999" width="148" height="148"/>
+          <g>
+            <g>
+              <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="385" y1="92.5" x2="521" y2="92.5"/>
+              <g>
+                <polygon fill="#FFFFFF" points="387.778,96.203 386.205,92.5 387.778,88.797 379,92.5 				"/>
+              </g>
+              <g>
+                <polygon fill="#FFFFFF" points="518.222,96.203 519.795,92.5 518.222,88.797 527,92.5 				"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 433.3711 87)" fill="#FFFFFF" font-size="18">7mm</text>
+        </g>
+      </svg>
+    </div>
+    <div id="touch-target-sizes2" class="step" data-x="-1400" data-y="550">
+      <!-- Anton Håkanson, from The Noun Project (http://thenounproject.com/noun/mouse/#icon-No10025) -->
+      <svg width="573px" height="438px">
+        <g>
+          <g>
+            <g>
+              <path fill="#FFFFFF" d="M45.845,301.21c1.254,2.838,1.635,6.646,2.031,10.621c0.483,4.839,0.985,9.842,3.04,12.89
+				c2.392,3.546,6.799,3.563,13.792,3.302c3.265-0.125,6.965-0.264,10.724,0.174c9.062,1.051,12.359,11.255,13.498,16.925
+				l-3.329,2.496c-0.625-4.065-2.989-14.86-10.598-15.744c-3.475-0.403-6.873-0.274-10.155-0.151
+				c-6.86,0.258-13.338,0.504-17.004-4.931c-2.577-3.819-3.123-9.297-3.652-14.594c-0.446-4.448-0.905-9.049-2.641-10.951
+				l0.038-0.032L45.845,301.21z M93.747,341.596c1.48-1.11,16.725-9.587,27.728,5.428c2.711,3.696,5.977,8.421,9.61,13.628
+				c-0.45,0.295-10.931,7.201-21.168,14.849l-5.682-7.58c0.812-1.661-0.189-5.049-2.567-8.22c-2.377-3.171-5.351-5.081-7.174-4.767
+				l-6.654-8.87C89.105,345.101,92.547,342.493,93.747,341.596z M78.138,379.524c-11.333-14.767,1.072-27.025,2.554-28.138
+				c1.199-0.901,4.666-3.473,5.943-4.421l6.651,8.869c-0.812,1.665,0.189,5.052,2.567,8.223c2.377,3.173,5.351,5.082,7.175,4.767
+				l5.684,7.578c-10.205,7.688-19.771,15.815-20.18,16.162C84.551,387.622,80.93,383.162,78.138,379.524z M148.228,426.791
+				l-1.153,0.866c-11.869,8.586-29.292,5.069-35.473-4.347c-6.707-10.217-15.163-20.909-22.497-30.032l0.472,0.558
+				c0.101-0.085,10.122-8.617,20.653-16.518c10.535-7.902,21.533-15.131,21.642-15.204l-0.03-0.048
+				c6.62,9.467,14.366,20.334,22.146,29.454C161.299,400.09,159.793,417.804,148.228,426.791z"/>
+            </g>
+            <g>
+              <path fill="#FFFFFF" d="M45.845,301.21c1.254,2.838,1.635,6.646,2.031,10.621c0.483,4.839,0.985,9.842,3.04,12.89
+				c2.392,3.546,6.799,3.563,13.792,3.302c3.265-0.125,6.965-0.264,10.724,0.174c9.062,1.051,12.359,11.255,13.498,16.925
+				l-3.329,2.496c-0.625-4.065-2.989-14.86-10.598-15.744c-3.475-0.403-6.873-0.274-10.155-0.151
+				c-6.86,0.258-13.338,0.504-17.004-4.931c-2.577-3.819-3.123-9.297-3.652-14.594c-0.446-4.448-0.905-9.049-2.641-10.951
+				l0.038-0.032L45.845,301.21z M93.747,341.596c1.48-1.11,16.725-9.587,27.728,5.428c2.711,3.696,5.977,8.421,9.61,13.628
+				c-0.45,0.295-10.931,7.201-21.168,14.849l-5.682-7.58c0.812-1.661-0.189-5.049-2.567-8.22c-2.377-3.171-5.351-5.081-7.174-4.767
+				l-6.654-8.87C89.105,345.101,92.547,342.493,93.747,341.596z M78.138,379.524c-11.333-14.767,1.072-27.025,2.554-28.138
+				c1.199-0.901,4.666-3.473,5.943-4.421l6.651,8.869c-0.812,1.665,0.189,5.052,2.567,8.223c2.377,3.173,5.351,5.082,7.175,4.767
+				l5.684,7.578c-10.205,7.688-19.771,15.815-20.18,16.162C84.551,387.622,80.93,383.162,78.138,379.524z M148.228,426.791
+				l-1.153,0.866c-11.869,8.586-29.292,5.069-35.473-4.347c-6.707-10.217-15.163-20.909-22.497-30.032l0.472,0.558
+				c0.101-0.085,10.122-8.617,20.653-16.518c10.535-7.902,21.533-15.131,21.642-15.204l-0.03-0.048
+				c6.62,9.467,14.366,20.334,22.146,29.454C161.299,400.09,159.793,417.804,148.228,426.791z"/>
+            </g>
+          </g>
+          <path fill="#83BCD0" d="M26,46v148h148V46H26z M154,174H46V66h108V174z"/>
+          <rect x="46" y="66" fill="#999999" width="108" height="108"/>
+          <g>
+            <g>
+              <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="52" y1="90.5" x2="148" y2="90.5"/>
+              <g>
+                <polygon fill="#FFFFFF" points="54.778,94.203 53.205,90.5 54.778,86.797 46,90.5 				"/>
+              </g>
+              <g>
+                <polygon fill="#FFFFFF" points="145.222,94.203 146.795,90.5 145.222,86.797 154,90.5 				"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 80.3711 85)" fill="#FFFFFF" font-size="18">5mm</text>
+          <g>
+            <g>
+              <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="32" y1="128.5" x2="168" y2="128.5"/>
+              <g>
+                <polygon fill="#FFFFFF" points="34.778,132.203 33.205,128.5 34.778,124.797 26,128.5 				"/>
+              </g>
+              <g>
+                <polygon fill="#FFFFFF" points="165.222,132.203 166.795,128.5 165.222,124.797 174,128.5 				"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 80.3711 122)" fill="#FFFFFF" font-size="18">7mm</text>
+        </g>
+        <g>
+          <path fill="#FFFFFF" d="M456.368,438c0,0,1.096-3.507-2.85-10.082c-3.945-6.576-26.082-15.344-33.096-26.303
+		c-7.015-10.959-17.623-40.662-19.727-43.836c-1.526-2.301,1.534-10.63,8.663-5.699c10.673,7.384,20.269,32.658,20.488,33.535
+		c0.219,0.877,0.438-5.918,0.438-5.918s-19.057-67.945-20.926-75.398c-1.869-7.451,7.118-11.836,11.282-5.479
+		c4.164,6.355,20.165,54.274,20.165,54.274s-0.22-0.575-0.22-10.438c0-5.365,9.289-9.494,13.261-4.713
+		c2.202,2.65,5.15,12.822,5.15,12.822s-1.234-5.991-1.534-9.863c-0.626-8.098,13.598-7.541,15.563-2.191l2.702,10.229
+		c0,0,0.123-5.762,1.023-6.868c3.507-4.31,9.741-2.784,12.932-0.073c8.257,7.014,12.724,49.065,12.724,56.663
+		s-1.756,15.204-1.837,17.858c-0.081,2.666,5.333,21.48,5.333,21.48"/>
+          <path fill="#83BCD0" d="M353,20v200h200V20H353z M527,194H379V46h148V194z"/>
+          <rect x="379" y="46" fill="#999999" width="148" height="148"/>
+          <g>
+            <g>
+              <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="385" y1="92.5" x2="521" y2="92.5"/>
+              <g>
+                <polygon fill="#FFFFFF" points="387.778,96.203 386.205,92.5 387.778,88.797 379,92.5 				"/>
+              </g>
+              <g>
+                <polygon fill="#FFFFFF" points="518.222,96.203 519.795,92.5 518.222,88.797 527,92.5 				"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 433.3711 87)" fill="#FFFFFF" font-size="18">7mm</text>
+          <g>
+            <g>
+              <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="359" y1="130.5" x2="547" y2="130.5"/>
+              <g>
+                <polygon fill="#FFFFFF" points="361.778,134.203 360.205,130.5 361.778,126.797 353,130.5 				"/>
+              </g>
+              <g>
+                <polygon fill="#FFFFFF" points="544.222,134.203 545.795,130.5 544.222,126.797 553,130.5 				"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 428.7539 124)" fill="#FFFFFF" font-size="18">10mm</text>
+        </g>
+      </svg>
+    </div>
+    <div id="touch-target-sizes3" class="step" data-x="-1400" data-y="550">
+      <!-- Anton Håkanson, from The Noun Project (http://thenounproject.com/noun/mouse/#icon-No10025) -->
+      <svg width="573px" height="438px">
+        <g>
+          <g>
+            <g>
+              <path fill="#FFFFFF" d="M45.845,301.21c1.254,2.838,1.635,6.646,2.031,10.621c0.483,4.839,0.985,9.842,3.04,12.89
+				c2.392,3.546,6.799,3.563,13.792,3.302c3.265-0.125,6.965-0.264,10.724,0.174c9.062,1.051,12.359,11.255,13.498,16.925
+				l-3.329,2.496c-0.625-4.065-2.989-14.86-10.598-15.744c-3.475-0.403-6.873-0.274-10.155-0.151
+				c-6.86,0.258-13.338,0.504-17.004-4.931c-2.577-3.819-3.123-9.297-3.652-14.594c-0.446-4.448-0.905-9.049-2.641-10.951
+				l0.038-0.032L45.845,301.21z M93.747,341.596c1.48-1.11,16.725-9.587,27.728,5.428c2.711,3.696,5.977,8.421,9.61,13.628
+				c-0.45,0.295-10.931,7.201-21.168,14.849l-5.682-7.58c0.812-1.661-0.189-5.049-2.567-8.22c-2.377-3.171-5.351-5.081-7.174-4.767
+				l-6.654-8.87C89.105,345.101,92.547,342.493,93.747,341.596z M78.138,379.524c-11.333-14.767,1.072-27.025,2.554-28.138
+				c1.199-0.901,4.666-3.473,5.943-4.421l6.651,8.869c-0.812,1.665,0.189,5.052,2.567,8.223c2.377,3.173,5.351,5.082,7.175,4.767
+				l5.684,7.578c-10.205,7.688-19.771,15.815-20.18,16.162C84.551,387.622,80.93,383.162,78.138,379.524z M148.228,426.791
+				l-1.153,0.866c-11.869,8.586-29.292,5.069-35.473-4.347c-6.707-10.217-15.163-20.909-22.497-30.032l0.472,0.558
+				c0.101-0.085,10.122-8.617,20.653-16.518c10.535-7.902,21.533-15.131,21.642-15.204l-0.03-0.048
+				c6.62,9.467,14.366,20.334,22.146,29.454C161.299,400.09,159.793,417.804,148.228,426.791z"/>
+            </g>
+            <g>
+              <path fill="#FFFFFF" d="M45.845,301.21c1.254,2.838,1.635,6.646,2.031,10.621c0.483,4.839,0.985,9.842,3.04,12.89
+				c2.392,3.546,6.799,3.563,13.792,3.302c3.265-0.125,6.965-0.264,10.724,0.174c9.062,1.051,12.359,11.255,13.498,16.925
+				l-3.329,2.496c-0.625-4.065-2.989-14.86-10.598-15.744c-3.475-0.403-6.873-0.274-10.155-0.151
+				c-6.86,0.258-13.338,0.504-17.004-4.931c-2.577-3.819-3.123-9.297-3.652-14.594c-0.446-4.448-0.905-9.049-2.641-10.951
+				l0.038-0.032L45.845,301.21z M93.747,341.596c1.48-1.11,16.725-9.587,27.728,5.428c2.711,3.696,5.977,8.421,9.61,13.628
+				c-0.45,0.295-10.931,7.201-21.168,14.849l-5.682-7.58c0.812-1.661-0.189-5.049-2.567-8.22c-2.377-3.171-5.351-5.081-7.174-4.767
+				l-6.654-8.87C89.105,345.101,92.547,342.493,93.747,341.596z M78.138,379.524c-11.333-14.767,1.072-27.025,2.554-28.138
+				c1.199-0.901,4.666-3.473,5.943-4.421l6.651,8.869c-0.812,1.665,0.189,5.052,2.567,8.223c2.377,3.173,5.351,5.082,7.175,4.767
+				l5.684,7.578c-10.205,7.688-19.771,15.815-20.18,16.162C84.551,387.622,80.93,383.162,78.138,379.524z M148.228,426.791
+				l-1.153,0.866c-11.869,8.586-29.292,5.069-35.473-4.347c-6.707-10.217-15.163-20.909-22.497-30.032l0.472,0.558
+				c0.101-0.085,10.122-8.617,20.653-16.518c10.535-7.902,21.533-15.131,21.642-15.204l-0.03-0.048
+				c6.62,9.467,14.366,20.334,22.146,29.454C161.299,400.09,159.793,417.804,148.228,426.791z"/>
+            </g>
+          </g>
+          <path fill="#3584A0" d="M0,20v200h200V20H0z M174,194H26V46h148V194z"/>
+          <path fill="#83BCD0" d="M26,46v148h148V46H26z M154,174H46V66h108V174z"/>
+          <rect x="46" y="66" fill="#999999" width="108" height="108"/>
+          <g>
+            <g>
+              <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="52" y1="90.5" x2="148" y2="90.5"/>
+              <g>
+                <polygon fill="#FFFFFF" points="54.778,94.203 53.205,90.5 54.778,86.797 46,90.5 				"/>
+              </g>
+              <g>
+                <polygon fill="#FFFFFF" points="145.222,94.203 146.795,90.5 145.222,86.797 154,90.5 				"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 80.3711 85)" fill="#FFFFFF" font-size="18">5mm</text>
+          <g>
+            <g>
+              <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="32" y1="128.5" x2="168" y2="128.5"/>
+              <g>
+                <polygon fill="#FFFFFF" points="34.778,132.203 33.205,128.5 34.778,124.797 26,128.5 				"/>
+              </g>
+              <g>
+                <polygon fill="#FFFFFF" points="165.222,132.203 166.795,128.5 165.222,124.797 174,128.5 				"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 80.3711 122)" fill="#FFFFFF" font-size="18">7mm</text>
+          <g>
+            <g>
+              <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="6" y1="167.5" x2="194" y2="167.5"/>
+              <g>
+                <polygon fill="#FFFFFF" points="8.778,171.203 7.205,167.5 8.778,163.797 0,167.5 				"/>
+              </g>
+              <g>
+                <polygon fill="#FFFFFF" points="191.222,171.203 192.795,167.5 191.222,163.797 200,167.5 				"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 75.7544 160)" fill="#FFFFFF" font-size="18">10mm</text>
+        </g>
+        <g>
+          <path fill="#FFFFFF" d="M456.368,438c0,0,1.096-3.507-2.85-10.082c-3.945-6.576-26.082-15.344-33.096-26.303
+		c-7.015-10.959-17.623-40.662-19.727-43.836c-1.526-2.301,1.534-10.63,8.663-5.699c10.673,7.384,20.269,32.658,20.488,33.535
+		c0.219,0.877,0.438-5.918,0.438-5.918s-19.057-67.945-20.926-75.398c-1.869-7.451,7.118-11.836,11.282-5.479
+		c4.164,6.355,20.165,54.274,20.165,54.274s-0.22-0.575-0.22-10.438c0-5.365,9.289-9.494,13.261-4.713
+		c2.202,2.65,5.15,12.822,5.15,12.822s-1.234-5.991-1.534-9.863c-0.626-8.098,13.598-7.541,15.563-2.191l2.702,10.229
+		c0,0,0.123-5.762,1.023-6.868c3.507-4.31,9.741-2.784,12.932-0.073c8.257,7.014,12.724,49.065,12.724,56.663
+		s-1.756,15.204-1.837,17.858c-0.081,2.666,5.333,21.48,5.333,21.48"/>
+          <path fill="#3584A0" d="M333,0v240h240V0H333z M553,220H353V20h200V220z"/>
+          <path fill="#83BCD0" d="M353,20v200h200V20H353z M527,194H379V46h148V194z"/>
+          <rect x="379" y="46" fill="#999999" width="148" height="148"/>
+          <g>
+            <g>
+              <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="385" y1="92.5" x2="521" y2="92.5"/>
+              <g>
+                <polygon fill="#FFFFFF" points="387.778,96.203 386.205,92.5 387.778,88.797 379,92.5 				"/>
+              </g>
+              <g>
+                <polygon fill="#FFFFFF" points="518.222,96.203 519.795,92.5 518.222,88.797 527,92.5 				"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 433.3711 87)" fill="#FFFFFF" font-size="18">7mm</text>
+          <g>
+            <g>
+              <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="359" y1="130.5" x2="547" y2="130.5"/>
+              <g>
+                <polygon fill="#FFFFFF" points="361.778,134.203 360.205,130.5 361.778,126.797 353,130.5 				"/>
+              </g>
+              <g>
+                <polygon fill="#FFFFFF" points="544.222,134.203 545.795,130.5 544.222,126.797 553,130.5 				"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 428.7539 124)" fill="#FFFFFF" font-size="18">10mm</text>
+          <g>
+            <g>
+              <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="339" y1="169.5" x2="567" y2="169.5"/>
+              <g>
+                <polygon fill="#FFFFFF" points="341.778,173.203 340.205,169.5 341.778,165.797 333,169.5 				"/>
+              </g>
+              <g>
+                <polygon fill="#FFFFFF" points="564.222,173.203 565.795,169.5 564.222,165.797 573,169.5 				"/>
+              </g>
+            </g>
+          </g>
+          <text transform="matrix(1 0 0 1 421.4824 162)" fill="#FFFFFF" font-size="18">&gt; 10mm</text>
+        </g>
+      </svg>
+    </div>
+    
+    
+    <!-- HTML5 -->
+    
+    <div id="hello-html5" class="step" data-x="0" data-y="0" data-z="1000">
+        <svg width="500" height="500">
+            <g transform="translate(25, 25) scale(2.5)">
+                <polygon points="20,133 9,0 140,0 127,133 74,148" fill="#e44d26"/>
+                <polygon points="74,137 117,125 127,11 74,11" fill="#f16529"/>
+                <polygon points="74,60 52,60 51,44 74,44 74,27 33,27 37,77 74,77" fill="#ebebeb"/>
+                <polygon points="74,103 56,98 55,85 38,85 41,110 74,120" fill="#ebebeb"/>
+                <polygon points="74,60 74,77 94,77 92,98 74,103 74,120 108,110 112,60" fill="#fff"/>
+                <polygon points="74,27 74,44 113,44 115,27" fill="#fff"/>
+            </g>
+        </svg>
+    </div>
+    
+    <div id="html5-platform-agnostic" class="step html5-feature feature1" data-x="0" data-y="25" data-z="1000">
+        <h1>PLATFORM AGNOSTIC</h1>
+    </div>
+    
+    <div id="html5-content-first" class="step html5-feature feature2" data-x="0" data-y="50" data-z="1000">
+        <h1>CONTENT-FIRST</h1>
+    </div>
+    
+    <div id="html5-responsive" class="step html5-feature feature3" data-x="0" data-y="75" data-z="1000">
+        <h1>RESPONSIVE</h1>
+    </div>
+    
+    <div id="html5-blank-canvas" class="step html5-feature feature4" data-x="0" data-y="100" data-z="1000">
+        <h1>BLANK CANVAS</h1>
+    </div>
+    
+    <div id="overview" class="step" data-x="0" data-y="300" data-scale="3">
+    </div>
+</div>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+</body>
+</html>
+
